@@ -2,8 +2,8 @@
     <div>
         <nav class="navbar">
             <div class="container">
-                <div class="navbar-header header-logo">
-                    <a href="url">Title</a>
+                <div class="navbar-header">
+                    <a href="/">Mathew A. Jacqmin-Kramer</a>
                 </div>
                 <div class="menu navbar-right">
                         <NuxtLink v-for="page in pages" class="menu-item" :to="page.url" :title="page.title">{{ page.title }}</NuxtLink>
@@ -11,7 +11,7 @@
                 </div>
             </div>
         </nav>
-        <nav class="navbar-mobile" id="nav-mobile" style="display: none;">
+        <nav class="navbar-mobile" style="display: none;">
             <div class="container">
                 <div class="navbar-header">
                     <div>
@@ -30,6 +30,43 @@
         </nav>
     </div>
 </template>
+
+<style scoped>
+.navbar {
+    height: 4em;
+    line-height: 1.5em;
+    padding-top: 1em;
+    font-size: 1em;
+    width: 100%;
+}
+
+.navbar .container {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .navbar-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    margin: 0em 1em 0em 1em;
+    color: rgb(164,32,109);
+}
+
+.navbar .navbar-header {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .navbar-header a {
+    color: #fff;
+}
+</style>
 
 <script>
 export default {
