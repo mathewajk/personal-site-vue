@@ -10,7 +10,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
+  box-sizing: border-box;
+
+  min-height: 550px;
   height: 100vh;
+
   background: rgb(164,32,109);
   background: linear-gradient(90deg, rgba(164,32,109,1) 50%, rgba(255,255,255,1) 50%);
 
