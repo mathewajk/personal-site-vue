@@ -48,18 +48,18 @@
     }
 
     .about-name {
-        grid-row: 1 / 3;
+        grid-row: 1 / 2;
         grid-column: 1;
         margin-top: 1em;
     }
 
     .about-photo {
-        grid-row: 3 / 5;
+        grid-row: 3;
         grid-column: 1;
     }
     
     .about-description {
-        grid-row: 5 / 7;
+        grid-row: 4 / 7;
         grid-column: 1;
     }
 }
