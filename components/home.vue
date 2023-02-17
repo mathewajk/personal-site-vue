@@ -9,19 +9,21 @@
 <style>
 
 .home-about {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+
     margin-top: auto;
     margin-bottom: auto;
 
     text-align: center;
     
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
     align-items: center;
 }
 
 .about-name {
+    grid-row: 1;
     grid-column: 1 / 4;
-    padding: 2em;
 
     color: #fff;
     font-size: 2em;
@@ -29,12 +31,37 @@
 }
 
 .about-photo {
+    grid-row: 1;
     grid-column: 4;
 }
 
 .about-description {
-    grid-column: 5 / 7;
-    padding: 4em;
+    grid-row: 1;
+    grid-column: 5 / 8;
+}
+
+
+@media screen and (max-width: 767px) {
+    .home-about {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-name {
+        grid-row: 1 / 3;
+        grid-column: 1;
+        margin-top: 1em;
+    }
+
+    .about-photo {
+        grid-row: 3 / 5;
+        grid-column: 1;
+    }
+    
+    .about-description {
+        grid-row: 5 / 7;
+        grid-column: 1;
+    }
 }
 
 </style>
