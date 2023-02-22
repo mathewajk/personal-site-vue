@@ -6,17 +6,28 @@
             <h1>Mathew A. Jacqmin-Kramer</h1>
             <p>I am a web engineer, data scientist, game developer, and composer.</p>
             <p>You can find me on:</p>
-            <ul>
+            <ul class="social-links">
                 <li v-for="social in socials" :key="social.title">
                     <span class="separator"></span>
                     <a :href="social.url" :title="social.alt">{{  social.title }}</a>
                 </li>
             </ul>
+            <div class="other-links">
+                <p>Music activities:</p>
+                    <ul>
+                    <li><a href="https://lumicsound.co" title="music portfolio">music portfolio</a></li>
+                    <li><a href="https://michigantaiko.net" title="great lakes taiko center">great lakes taiko center</a></li>
+                    </ul>
+            </div>
         </div>
     </div>
 </template>
 
 <style>
+
+a {
+    color: rgb(164,32,109);
+}
 
 h1 {
     font-size: 2.5em;
@@ -27,26 +38,31 @@ h1 {
 p + p {
     margin-top: 1.5em;
 }
-.about-description ul {
+
+.about-description li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+.about-description ul.social-links {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   
-    padding-left: 0px;
-
     justify-content: space-around;
-
 }
 
-.about-description li + li span::before{
+.other-links li::before {
+    content: '> '
+}
+
+.about-description .social-links li + li span::before{
     content: '// ';
     text-decoration: none;
     cursor: default;
     color: black;
-}
-
-.about-description li {
-    list-style: none;
 }
 
 .home-about {
@@ -106,6 +122,9 @@ p + p {
     padding: 0em 0em 0em 1.5em;
 }
 
+.other-links {
+    margin-top: 2em;
+}
 
 @media screen and (max-width: 767px) {
 
@@ -141,6 +160,7 @@ p + p {
     .about-description {
         grid-row: 2;
         grid-column: 1;
+        
     }
 }
 
