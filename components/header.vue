@@ -6,7 +6,8 @@
                     <a href="/">Mathew A. Jacqmin-Kramer</a>
                 </div>
                 <div class="menu navbar-right">
-                        <a v-for="page in pages" :key="page" class="menu-item" :href="page.url" :title="page.title">{{ page.title }}</a>
+                        <a href="mailto:mathew@mathewkramer.io" title="mathew@mathewkramer.io" key="1">Contact</a>
+                        <NuxtLink v-for="page in pages" v-bind:key="page.key" class="menu-item" :to="page.url" :title="page.title">{{ page.title }}</NuxtLink>
                         <!-- <a href="javascript: void(0);" v-on:click="" class="theme-switch">Dark<i class="fa fa-sun"></i></a>&nbsp; -->
                 </div>
             </div>
@@ -64,28 +65,39 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
-  .navbar a {
+  .navbar .bgwhite a {
+    color: rgb(164,32,109);
+  }
+  .home .navbar a {
     margin: 0em 1em 0em 1em;
     color: white;
   }
+
 }
 
 .navbar .navbar-header {
+    font-weight: bold;    
+    color: rgb(164,32,109);
+}
+
+.home .navbar .navbar-header a {
     font-weight: bold;
     color: #fff;
 }
 
 .navbar .navbar-header a {
-    color: #fff;
+    color: rgb(164,32,109);
 }
+
 </style>
 
 <script>
 export default {
   name: 'Header',
+  props: ['bgwhite'],
   data() {
   return {
-    pages: [{ url: 'https://lumicsound.co', title: 'Portfolio' }],
+    pages: [{ url: 'cv', title: 'CV', key: 2 }],
     }
   },
   emits: {
