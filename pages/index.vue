@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <div class="background-container"></div>
     <Header></Header>
     <Home></Home>
   </div>
@@ -15,16 +16,43 @@ body {
   min-height: 550px;
   height: 100vh;
 
-  background: rgb(164,32,109);
-  background: linear-gradient(90deg, rgba(164,32,109,1) 50%, rgba(255,255,255,1) 50%);
-
   font-family: 'Red Hat Mono', monospace;
+  /*background: rgb(164,32,109);
+  background: linear-gradient(90deg, rgba(164,32,109,1) 50%, rgba(255,255,255,1) 50%);*/
+
+}
+
+.background-container {
+  position: absolute;
+  z-index: -10;
+
+  top: 0px;
+  left: 0px;
+
+  width: 50%;
+  height: 100%;
+
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.10), rgba(117, 19, 93, 0.90)), url("/self.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
 
 @media screen and (max-width: 767px) {
   body {
-    background: rgb(164,32,109);
-    background: linear-gradient(180deg, rgba(164,32,109,1) 50%, rgba(255,255,255,1) 50%);
+    /* background: rgb(164,32,109);
+    background: linear-gradient(180deg, rgba(164,32,109,1) 50%, rgba(255,255,255,1) 50%); */
+  }
+
+  .background-container {
+    width: 100%;
+    height: 50%;
+
+    background-image: linear-gradient(to top, rgba(245, 246, 252, 0.10), rgba(117, 19, 93, 0.90)), url("/self.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 

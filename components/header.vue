@@ -6,8 +6,8 @@
                     <a href="/">Mathew A. Jacqmin-Kramer</a>
                 </div>
                 <div class="menu navbar-right">
-                        <NuxtLink v-for="page in pages" class="menu-item" :to="page.url" :title="page.title">{{ page.title }}</NuxtLink>
-                        <a href="javascript:void(0);" class="theme-switch">Toggle<i class="fa fa-sun"></i></a>&nbsp;
+                        <NuxtLink v-for="page in pages" :key="page" class="menu-item" :to="page.url" :title="page.title">{{ page.title }}</NuxtLink>
+                        <a href="javascript: void(0);" v-on:click="" class="theme-switch">Dark<i class="fa fa-sun"></i></a>&nbsp;
                 </div>
             </div>
         </nav>
@@ -32,6 +32,11 @@
 </template>
 
 <style scoped>
+
+nav {
+    z-index: 10;
+}
+
 .navbar {
     height: 4em;
     line-height: 1.5em;
@@ -58,6 +63,13 @@
     color: rgb(164,32,109);
 }
 
+@media screen and (max-width: 767px) {
+  .navbar a {
+    margin: 0em 1em 0em 1em;
+    color: white;
+  }
+}
+
 .navbar .navbar-header {
     font-weight: bold;
     color: #fff;
@@ -73,9 +85,10 @@ export default {
   name: 'Header',
   data() {
   return {
-    parentMessage: 'Parent',
-    pages: [{ url: '/', title: 'Home' }, { url: 'blog', title: 'Blog' }]
+    pages: [{ url: 'blog', title: 'Blog' }]
     }
+  },
+  emits: {
   }
 }
 </script>

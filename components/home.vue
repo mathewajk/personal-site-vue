@@ -1,16 +1,21 @@
 <template>
     <div class="home-about">
-        <div class="about-name">Mathew A. Jacqmin-Kramer</div>
-        <div class="about-photo"><div class="photo-frame"><img src="DSC03704.jpg" alt="A photo of Mathew."/></div></div>
-        <div class="about-description">I am a web developer and data scientist.</div>
+        <div class="about-name"></div>
+        <div class="about-photo"></div>
+        <div class="about-description"><h1>Mathew A. Jacqmin-Kramer</h1><p>I am a web developer and data scientist.</p></div>
     </div>
 </template>
 
 <style>
 
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
 .home-about {
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     margin-top: auto;
     margin-bottom: auto;
@@ -20,11 +25,13 @@
     display: grid;
     align-items: center;
     justify-content: center;
+
+    padding: 0em 1em 0em 1em;
 }
 
 .about-name {
     grid-row: 1;
-    grid-column: 1 / 4;
+    grid-column: 1;
 
     color: #fff;
     font-size: 2em;
@@ -59,20 +66,23 @@
 
 .about-description {
     grid-row: 1;
-    grid-column: 5 / 8;
+    grid-column: 2;
+    padding: 0em 0em 0em 1.5em;
 }
 
 
 @media screen and (max-width: 767px) {
+
     .home-about {
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-columns: auto;
+        margin: 0em;
+        height: 95%;
     }
 
     .about-name {
-        grid-row: 1 / 2;
+        grid-row: 1;
         grid-column: 1;
-        margin-top: 1em;
     }
 
     .about-photo {
@@ -93,7 +103,7 @@
     }
 
     .about-description {
-        grid-row: 5 / 6;
+        grid-row: 2;
         grid-column: 1;
     }
 }
