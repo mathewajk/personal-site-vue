@@ -6,8 +6,8 @@
                     <a href="/">Mathew A. Jacqmin-Kramer</a>
                 </div>
                 <div class="menu navbar-right">
-                        <NuxtLink v-for="page in pages" :key="page" class="menu-item" :to="page.url" :title="page.title">{{ page.title }}</NuxtLink>
-                        <a href="javascript: void(0);" v-on:click="" class="theme-switch">Dark<i class="fa fa-sun"></i></a>&nbsp;
+                        <a v-for="page in pages" :key="page" class="menu-item" :href="page.url" :title="page.title">{{ page.title }}</a>
+                        <!-- <a href="javascript: void(0);" v-on:click="" class="theme-switch">Dark<i class="fa fa-sun"></i></a>&nbsp; -->
                 </div>
             </div>
         </nav>
@@ -85,7 +85,7 @@ export default {
   name: 'Header',
   data() {
   return {
-    pages: [{ url: 'blog', title: 'Blog' }]
+    pages: [{ url: 'https://lumicsound.co', title: 'Portfolio' }],
     }
   },
   emits: {

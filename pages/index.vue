@@ -16,6 +16,9 @@ body {
   min-height: 550px;
   height: 100vh;
 
+  margin: 0px;
+  padding: 0.5em;
+
   font-family: 'Red Hat Mono', monospace;
   /*background: rgb(164,32,109);
   background: linear-gradient(90deg, rgba(164,32,109,1) 50%, rgba(255,255,255,1) 50%);*/

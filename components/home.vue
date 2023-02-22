@@ -2,7 +2,17 @@
     <div class="home-about">
         <div class="about-name"></div>
         <div class="about-photo"></div>
-        <div class="about-description"><h1>Mathew A. Jacqmin-Kramer</h1><p>I am a web developer and data scientist.</p></div>
+        <div class="about-description">
+            <h1>Mathew A. Jacqmin-Kramer</h1>
+            <p>I am a web engineer, data scientist, game developer, and composer.</p>
+            <p>You can find me on:</p>
+            <ul>
+                <li v-for="social in socials" :key="social.title">
+                    <span class="separator"></span>
+                    <a :href="social.url" :title="social.alt">{{  social.title }}</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -11,6 +21,32 @@
 h1 {
     font-size: 2.5em;
     font-weight: bold;
+    margin-bottom: 1em;
+}
+
+p + p {
+    margin-top: 1.5em;
+}
+.about-description ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    padding-left: 0px;
+
+    justify-content: space-around;
+
+}
+
+.about-description li + li span::before{
+    content: '// ';
+    text-decoration: none;
+    cursor: default;
+    color: black;
+}
+
+.about-description li {
+    list-style: none;
 }
 
 .home-about {
@@ -114,9 +150,15 @@ h1 {
 export default {
   name: 'Home',
   data() {
-  return {
-    
+    return {
+        socials: [{ url: 'https://github.com/mathewajk', title: 'github', alt: 'mathewajk'},
+                  { url: 'https://osf.io/ubas9', title: 'osf', alt: 'osf'},
+                  { url: 'https://superlumic.itch.io', title: 'itch.io', alt: 'superlumic'}, 
+                  { url: 'https://superlumic.bandcamp.com/', title: 'bandcamp', alt: 'superlumic'}, 
+                  { url: 'https://soundcloud.com/superlumic', title: 'soundcloud', alt: 'superlumic'}]
     }
+  },
+  emits: {
   }
 }
 </script>
