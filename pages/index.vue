@@ -1,8 +1,8 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper home">
     <div class="background-container"></div>
-    <Header></Header>
-    <Home></Home>
+    <Header />
+    <Home />
   </div>
 </template>
 
@@ -12,9 +12,9 @@
 
 body {
   box-sizing: border-box;
-
-  min-height: 550px;
+  
   height: 100vh;
+  min-height: 800px;
 
   margin: 0px;
   padding: 0.5em;
@@ -79,6 +79,6 @@ body {
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'IndexPage',
+  name: 'IndexPage'
 })
 </script>
