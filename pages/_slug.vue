@@ -41,12 +41,33 @@ body {
 }
 
 .nuxt-content {
-  padding: 2em;
+  padding: 2rem;
 }
 
 table + h3 {
-  margin-top: 3em;
+  margin-top: 3rem;
 }
+
+ul + h3 {
+  margin-top: 3rem;
+}
+
+td {
+  padding-right: 1rem;
+}
+
+td:last-child {
+  padding-right: 0em;
+}
+
+tr a {
+  text-decoration: none;
+  font-size: 0.75em;
+}
+
+/* a::before {
+  content: '<i class="fa fa-link" />'
+} */
 
 </style>
 
