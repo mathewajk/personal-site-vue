@@ -14,6 +14,7 @@
 | | |
 | ---: | :--- |
 | **2024-present** | Senior Software Developer, Center for Academic Innovation, University of Michigan |
+| **2024-present** | Technical Lead (ECoach), Center for Academic Innovation, University of Michigan |
 | **2023-2024** | Software Developer, Center for Academic Innovation, University of Michigan |
 | **2021-2022** | Graduate Student Instructor, University of Michigan |
 | **2019-2020** | Graduate Student Research Assistant, University of Michigan |
