@@ -65,9 +65,9 @@ tr a {
   font-size: 0.75em;
 }
 
-/* a::before {
-  content: '<i class="fa fa-link" />'
-} */
+tr a::after {
+  content: ' >'
+}
 
 </style>
 

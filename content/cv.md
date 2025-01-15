@@ -25,9 +25,9 @@
 
 | | | |
 | ---: | :--- | :--- |
-| **2024-** | Technical Lead, ECoach, University of Michigan | [https://ecoach.ai.umich.edu](https://ecoach.ai.umich.edu) |
-| **2024-** | Lead Developer, Kaki: Pitch-accent study Tool for Japanese | [https://github.com/mathewajk/Kaki](https://github.com/mathewajk/Kaki) |
-| **2021-2022-** | Developer and Consultant, YouSpeak | [https://github.com/mathewajk/LingTube/tree/main/youspeak](https://github.com/mathewajk/LingTube/tree/main/youspeak) |
+| **2024-** | Technical Lead, ECoach, Center for Academic Innovation | [https://ecoach.ai.umich.edu](https://ecoach.ai.umich.edu) |
+| **2022-2023-** | Lead Developer, Kaki: Pitch-accent study Tool for Japanese | [https://github.com/mathewajk/Kaki](https://github.com/mathewajk/Kaki) |
+| **2021-2022** | Developer and Consultant, YouSpeak, University of Michigan  | [https://github.com/mathewajk/LingTube/tree/main/youspeak](https://github.com/mathewajk/LingTube/tree/main/youspeak) |
 | **2019-2022** | Lead Developer, LingTube + YouDePP, University of Michigan | [https://github.com/mathewajk/LingTube](https://github.com/mathewajk/LingTube) |
 
 
