@@ -13,8 +13,7 @@
 
 | | |
 | ---: | :--- |
-| **2024-present** | Senior Software Developer, Center for Academic Innovation, University of Michigan |
-| **2024-present** | Technical Lead (ECoach), Center for Academic Innovation, University of Michigan |
+| **2024-** | Senior Software Developer, Center for Academic Innovation, University of Michigan |
 | **2023-2024** | Software Developer, Center for Academic Innovation, University of Michigan |
 | **2021-2022** | Graduate Student Instructor, University of Michigan |
 | **2019-2020** | Graduate Student Research Assistant, University of Michigan |
@@ -22,12 +21,22 @@
 | **2016–2018** | Research Specialist, Language Processing Lab, The University of Chicago |
 
 
+### Projects
+
+| | | |
+| ---: | :--- | :--- |
+| **2024-** | Technical Lead, ECoach, University of Michigan | [https://ecoach.ai.umich.edu](https://ecoach.ai.umich.edu) |
+| **2024-** | Lead Developer, Kaki: Pitch-accent study Tool for Japanese | [https://github.com/mathewajk/Kaki](https://github.com/mathewajk/Kaki) |
+| **2021-2022-** | Developer and Consultant, YouSpeak | [https://github.com/mathewajk/LingTube/tree/main/youspeak](https://github.com/mathewajk/LingTube/tree/main/youspeak) |
+| **2019-2022** | Lead Developer, LingTube + YouDePP, University of Michigan | [https://github.com/mathewajk/LingTube](https://github.com/mathewajk/LingTube) |
+
+
 ### Other experience
 
 | | |
 | ---: | :--- |
-| **Oct. 2023 - Dec. 2023** | Recurse Center Participant |
-| **2022-present** | Volunteer Administrator, Great Lakes Taiko Center |
+| **2023** | Recurse Center Participant |
+| **2022-** | Volunteer Administrator, Great Lakes Taiko Center |
 
 ### Teaching
 
@@ -48,8 +57,7 @@
 ### Conference proceedings
 
 - Cheng, L. S. P., **Kramer, M. A.**, Upreti, R., and Namboodiripad, S. (2022). _Moving past indirect proxies for language experience: 'Native speaker' and residential history are poor predictors of language behavior._ To appear in the proceedings of the the 44th Annual Meeting of the Cognitive Science Society.
-- Liu, Z., Upreti, R., **Kramer, M. A.**, and and Namboodiripad, S. (2022). _Does one size fit all in crosslinguistic dependency length minimization?_ To appear in the proceedings of the the 44th Annual Meeting
-of the Cognitive Science Society.
+- Liu, Z., Upreti, R., **Kramer, M. A.**, and and Namboodiripad, S. (2022). _Does one size fit all in crosslinguistic dependency length minimization?_ To appear in the proceedings of the the 44th Annual Meeting of the Cognitive Science Society.
 - Namboodiripad, S., Cuneo, N., **Kramer, M. A.**, Sedarous, Y., Bisnath, F., Sugimoto, Y., and Goldberg, A. (2022). _Backgroundedness predicts island status of non-finite adjuncts in English._ To appear in the proceedings of the the 44th Annual Meeting of the Cognitive Science Society.
 - **Kramer, A.** (2021). _Dependency Lengths in Speech and Writing: A Cross-Linguistic Comparison via YouDePP, a Pipeline for Scraping and Parsing YouTube Captions._ Proceedings of the Society for Computation in Linguistics, 4(1). https://doi.org/10.7275/PZ9G-D780
 - **Kramer, A.**, & Liu, Z. (2021). _A Data-driven Approach to Crosslinguistic Structural Biases._ Proceedings of the Society for Computation in Linguistics, 4(1). https://doi.org/10.7275/QFRB-A654
