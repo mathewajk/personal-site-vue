@@ -4,7 +4,7 @@
         <div class="about-photo"></div>
         <div class="about-description">
             <h1>Mathew A. Jacqmin-Kramer</h1>
-            <p>I am a web engineer, data scientist, game developer, and composer.</p>
+            <p>I am a web developer, linguist, taiko artist, and composer.</p>
             <p>You can find me on:</p>
             <ul class="social-links">
                 <li v-for="social in socials" :key="social.title">
@@ -173,9 +173,9 @@ export default {
     return {
         socials: [{ url: 'https://github.com/mathewajk', title: 'github', alt: 'mathewajk'},
                   { url: 'https://osf.io/ubas9', title: 'osf', alt: 'osf'},
-                  { url: 'https://superlumic.itch.io', title: 'itch.io', alt: 'superlumic'}, 
-                  { url: 'https://superlumic.bandcamp.com/', title: 'bandcamp', alt: 'superlumic'}, 
-                  { url: 'https://soundcloud.com/superlumic', title: 'soundcloud', alt: 'superlumic'}]
+                  { url: 'https://seventhfonon.itch.io', title: 'itch.io', alt: 'seventhfonon on itch.io'}, 
+                  { url: 'https://seventhfonon.bandcamp.com/', title: 'bandcamp', alt: 'seventhfonon on bandcamp'}, 
+                  { url: 'https://soundcloud.com/seventhfonon', title: 'soundcloud', alt: 'seventhfonon on soundcloud'}]
     }
   },
   emits: {
