@@ -15,8 +15,9 @@
             <div class="other-links">
                 <p>Music activities:</p>
                     <ul>
-                    <li><a href="https://lumicsound.co" title="music portfolio">music portfolio</a></li>
+                    <li><a href="https://music.glyph.cafe" title="music portfolio">music portfolio</a></li>
                     <li><a href="https://michigantaiko.net" title="great lakes taiko center">great lakes taiko center</a></li>
+                    <li>toronto shishimai kai (coming soon!)</li>
                     </ul>
             </div>
         </div>

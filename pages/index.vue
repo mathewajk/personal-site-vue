@@ -35,7 +35,7 @@ body {
   width: 50%;
   height: 100%;
 
-  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.10), rgba(117, 19, 93, 0.90)), url("/self.png");
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.10), rgba(117, 19, 93, 0.90)), url("/self-taiko-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ body {
     width: 100%;
     height: 50%;
 
-    background-image: linear-gradient(to top, rgba(245, 246, 252, 0.10), rgba(117, 19, 93, 0.90)), url("/self.png");
+    background-image: linear-gradient(to top, rgba(245, 246, 252, 0.10), rgba(117, 19, 93, 0.90)), url("/self-taiko-2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
