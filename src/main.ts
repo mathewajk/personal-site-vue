@@ -1,3 +1,4 @@
+import { createHead } from '@unhead/vue/client'
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
@@ -6,4 +7,5 @@ import { initTheme } from './theme'
 
 initTheme()
 
-createApp(App).use(router).mount('#app')
+const head = createHead()
+createApp(App).use(head).use(router).mount('#app')

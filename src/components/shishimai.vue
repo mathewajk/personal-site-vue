@@ -9,10 +9,10 @@
         </div>
         <div id="about" class="section has-image">
             <div class="section-image">
-                <img src="../assets/edojishi.jpeg" alt="Toronto Shishimai Kai">
+                <img src="/edojishi.jpeg" alt="Toronto Shishimai Kai">
             </div>
             <div class="section-content">
-                <p>Toronto Shishimai Kai (TSK), founded January 2026, is a performing ensemble based in Toronto, Canada. We are dedicated to the practice and performance of Edo Kotobuki Jishi (江戸寿獅子), the traditional celebratory lion dance of Tokyo, and Edo Bayashi (江戸囃子), the traditional festival music of Tokyo.</p>
+                <p>{{ SHISHIMAI_ABOUT_FIRST_PARAGRAPH }}</p>
                 <p>We study in the tradition of premiere performing ensemble <a href="https://www.wakayamashachu.jp/" title="Wakayama Taneo Shachū">Wakayama Taneo Shachū (若山胤雄社中)</a>, which has been designated a Nationally Important Intangible Folk Cultural Asset in Japan, and we are committed to representing this tradition faithfully as we expand its practice to the GTA.</p>
                 <p>As a new group, as well as the first Wakayama-ryū (若山流) group in Eastern Canada, we are excited to be a part of a growing cohort of Wakayama-ryū groups across North America, including Vancouver, Portland, Minnesota, and Michigan, and are deeply grateful for their support as we begin our own journey.</p>
                 <p>Group membership is open to anyone interested in learning and performing the traditions of the Wakayama school. We welcome students of all ages and experience levels. For more information, please reach out to Mathew at <a href="mailto:mathew@sazanamitaiko.net" title="mathew@sazanamitaiko.net">mathew@sazanamitaiko.net</a>.</p>
@@ -40,6 +40,8 @@
 </template>
 
 <script setup lang="ts">
+import { SHISHIMAI_ABOUT_FIRST_PARAGRAPH } from '../site-meta'
+
 const members = [
     { name: 'Mathew Jacqmin-Kramer', role: 'Founder and Director', email: 'mathew@sazanamitaiko.net', 'bio': 'Mathew Jacqmin-Kramer is a long-time taiko player and recent transplant to Toronto. He combines a background in classical piano and composition for interactive media with study of traditional Japanese music through koto and shishimai to bring a multifaceted perspective to taiko performance and composition. As a member of the Great Lakes Taiko Center, he has performed with multiple groups, including the Godaiko Drummers, Raion Taiko, Sakura Japanese Instrumental Group, and his own taiko group, Sazanami Taiko Arts Ensemble. He began studying Edo Kotobuki Jishi with Eien Hunter-Ishikawa in 2024 and recently founded Toronto Shishimai Kai with the goal of bringing the study and performance of the Wakayama-ryū repertoire to the GTA.' },
     { name: 'Josh Bagalacsa', },
@@ -96,7 +98,8 @@ const members = [
 }
 
 .section {
-    margin-bottom: 4rem;
+    width: 100%;
+    margin-bottom: 2rem;
     max-width: 1000px;
     border-bottom: 1px solid var(--color-link-muted);
     padding-bottom: 2rem;
