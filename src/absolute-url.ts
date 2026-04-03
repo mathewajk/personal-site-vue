@@ -1,7 +1,8 @@
 /**
  * Open Graph and Twitter expect image URLs that crawlers can fetch.
- * Set `VITE_SITE_URL` in production (e.g. https://yoursite.com) so embeds work
- * even before client JS runs, when combined with index.html defaults.
+ * Set `VITE_SITE_URL` in production (e.g. https://yoursite.com, no trailing slash)
+ * so `vite build` can emit absolute `og:image` / `og:url` in HTML (helps Google Docs
+ * and similar unfurlers). The Vue app also uses this after hydration.
  */
 export function absoluteUrl(path: string): string {
   if (/^https?:\/\//i.test(path)) return path
