@@ -8,7 +8,7 @@
   --color-nav-heading: rgb(164, 32, 109);
   --color-nav-on-hero: #ffffff;
   --color-border-subtle: #bbbbbb;
-  --color-link-muted: rgb(193, 111, 159);
+  --color-link-muted: rgb(239, 232, 236);
 }
 
 :root[data-theme='dark'] {
@@ -19,7 +19,7 @@
   --color-nav-heading: rgb(223, 105, 174);
   --color-nav-on-hero: #ffffff;
   --color-border-subtle: #555555;
-  --color-link-muted: rgb(211, 129, 177);
+  --color-link-muted: rgb(95, 24, 65);
 }
 
 body {
