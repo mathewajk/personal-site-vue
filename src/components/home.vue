@@ -1,23 +1,33 @@
+<script setup lang="ts">
+const socials = [{ url: 'https://github.com/mathewajk', title: 'github', alt: 'mathewajk'},
+                  { url: 'https://osf.io/ubas9', title: 'osf', alt: 'osf'},
+                  { url: 'https://seventhfonon.itch.io', title: 'itch.io', alt: 'seventhfonon on itch.io'}, 
+                  { url: 'https://seventhfonon.bandcamp.com/', title: 'bandcamp', alt: 'seventhfonon on bandcamp'}, 
+                  { url: 'https://soundcloud.com/seventhfonon', title: 'soundcloud', alt: 'seventhfonon on soundcloud'}]
+</script>
+
 <template>
+    <div class="background-container"></div>
     <div class="home-about">
         <div class="about-name"></div>
         <div class="about-photo"></div>
         <div class="about-description">
             <h1>Mathew A. Jacqmin-Kramer</h1>
-            <p>I am a web developer, linguist, taiko artist, and composer.</p>
+            <p>I am a taiko artist, composer, web developer, and linguist.</p>
             <p>You can find me on:</p>
             <ul class="social-links">
                 <li v-for="social in socials" :key="social.title">
                     <span class="separator"></span>
-                    <a :href="social.url" :title="social.alt">{{  social.title }}</a>
+                    <a :href="social.url" :title="social.alt" target="_blank">{{ social.title }}</a>
                 </li>
             </ul>
             <div class="other-links">
                 <p>Music activities:</p>
                     <ul>
                     <li><a href="https://music.glyph.cafe" title="music portfolio">music portfolio</a></li>
+                    <li><RouterLink to="/shishimai">toronto shishimai kai</RouterLink></li>
+                    <li><a href="https://sazanamitaiko.net" title="sazanami taiko arts ensemble">sazanami taiko arts ensemble</a></li>
                     <li><a href="https://michigantaiko.net" title="great lakes taiko center">great lakes taiko center</a></li>
-                    <li>toronto shishimai kai (coming soon!)</li>
                     </ul>
             </div>
         </div>
@@ -27,7 +37,7 @@
 <style>
 
 a {
-    color: rgb(164,32,109);
+    color: var(--color-link);
 }
 
 h1 {
@@ -52,7 +62,8 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1em;
 }
 
 .other-links li::before {
@@ -63,7 +74,7 @@ ul {
     content: '// ';
     text-decoration: none;
     cursor: default;
-    color: black;
+    color: var(--color-text);
 }
 
 .home-about {
@@ -86,7 +97,7 @@ ul {
     grid-row: 1;
     grid-column: 1;
 
-    color: #fff;
+    color: var(--color-nav-on-hero);
     font-size: 2em;
     font-weight: bold;
 }
@@ -107,7 +118,7 @@ ul {
 
     border-radius: 150px;
     border: 5px solid;
-    border-color: #bbbbbb;
+    border-color: var(--color-border-subtle);
 }
 
 .photo-frame img {
@@ -161,25 +172,33 @@ ul {
     .about-description {
         grid-row: 2;
         grid-column: 1;
+        padding: 0;
         
     }
 }
 
-</style>
-
-<script>
-export default {
-  name: 'Home',
-  data() {
-    return {
-        socials: [{ url: 'https://github.com/mathewajk', title: 'github', alt: 'mathewajk'},
-                  { url: 'https://osf.io/ubas9', title: 'osf', alt: 'osf'},
-                  { url: 'https://seventhfonon.itch.io', title: 'itch.io', alt: 'seventhfonon on itch.io'}, 
-                  { url: 'https://seventhfonon.bandcamp.com/', title: 'bandcamp', alt: 'seventhfonon on bandcamp'}, 
-                  { url: 'https://soundcloud.com/seventhfonon', title: 'soundcloud', alt: 'seventhfonon on soundcloud'}]
+@media screen and (max-width: 767px) {
+    .about-description {
+        margin-top: 200px;
+        grid-row: 2;
+        grid-column: 1;  
     }
-  },
-  emits: {
-  }
 }
-</script>
+
+@media screen and (max-width: 568px) {
+    .about-description {
+        margin-top: 290px;
+        grid-row: 2;
+        grid-column: 1;  
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-description {
+        margin-top: 320px;
+        grid-row: 2;
+        grid-column: 1;  
+    }
+}
+
+</style>

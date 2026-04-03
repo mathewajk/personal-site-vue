@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-text-muted: #333333;
+  --color-link: rgb(164, 32, 109);
+  --color-nav-heading: rgb(164, 32, 109);
+  --color-nav-on-hero: #ffffff;
+  --color-border-subtle: #bbbbbb;
+  --color-link-muted: rgb(193, 111, 159);
+}
+
+:root[data-theme='dark'] {
+  --color-bg: #16141f;
+  --color-text: #ffffff;
+  --color-text-muted: #e8e8e8;
+  --color-link: rgb(207, 61, 146);
+  --color-nav-heading: rgb(207, 61, 146);
+  --color-nav-on-hero: #ffffff;
+  --color-border-subtle: #555555;
+  --color-link-muted: rgb(211, 129, 177);
+}
+
+body {
+  box-sizing: border-box;
+
+  min-height: 550px;
+  height: 100vh;
+
+  margin: 0em;
+  padding: 0em;
+
+  font-family: 'BIZ UDPMincho', serif;
+  line-height: 1.5;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+#app {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  padding: 2rem 5rem 2rem 5rem;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.article a {
+  color: var(--color-link);
+}
+
+.markdown-body {
+  color: var(--color-text);
+}
+
+.markdown-body div {
+  max-width: 1000px;
+}
+
+.markdown-body a {
+  color: var(--color-link);
+}
+
+.nuxt-content {
+  padding: 2rem;
+}
+
+table + h3 {
+  margin-top: 3rem;
+}
+
+ul + h3 {
+  margin-top: 3rem;
+}
+
+td {
+  padding-right: 1rem;
+}
+
+td:last-child {
+  padding-right: 0em;
+}
+
+tr a {
+  text-decoration: none;
+  font-size: 0.75em;
+  color: var(--color-link);
+}
+
+tr a::after {
+  content: ' >'
+}
+
+.background-container {
+  position: absolute;
+  z-index: -10;
+
+  top: 0px;
+  left: 0px;
+
+  width: 50%;
+  height: 100%;
+
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.10), rgba(117, 19, 93, 0.90)), url("/self-taiko-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+@media screen and (max-width: 767px) {
+  .background-container {
+    width: 100%;
+    height: 50%;
+
+    background-image: linear-gradient(to top, rgba(245, 246, 252, 0.10), rgba(117, 19, 93, 0.90)), url("/self-taiko-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.markdown-body h2 {
+  margin-top: 4rem;
+}
+
+.markdown-body h3 {
+  margin-top: 2rem;
+}
