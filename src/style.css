@@ -72,9 +72,6 @@ body {
   color: var(--color-link);
 }
 
-.nuxt-content {
-  padding: 2rem;
-}
 
 table + h3 {
   margin-top: 3rem;
@@ -143,4 +140,44 @@ tr a::after {
 
 .markdown-body h3 {
   margin-top: 2rem;
+}
+
+.article h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.title-sm {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .article {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .article h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .title-lg {
+    display: none;
+  }
+
+  .title-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-sm p {
+    margin: 0;
+    font-size: 1.25rem;
+  }
 }

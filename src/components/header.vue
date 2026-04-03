@@ -2,7 +2,7 @@
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faBars, faMoon, faSun, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faHome, faMoon, faSun, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { themeIsDark, toggleStoredTheme } from '../theme'
 
 const pages = [
@@ -69,7 +69,10 @@ onUnmounted(() => {
     <nav class="navbar" aria-label="Main">
       <div class="container">
         <div class="navbar-header">
-          <RouterLink to="/">Mathew A. Jacqmin-Kramer</RouterLink>
+          <RouterLink to="/" class="navbar-home-link" aria-label="Home">
+            <span class="navbar-home-text">Mathew A. Jacqmin-Kramer</span>
+            <FontAwesomeIcon :icon="faHome" class="navbar-home-icon" aria-hidden="true" />
+          </RouterLink>
         </div>
         <div class="menu navbar-right">
           <div class="nav-links-desktop">
@@ -363,5 +366,28 @@ nav {
 
 .navbar .navbar-header a {
   color: var(--color-nav-heading);
+}
+
+.navbar-home-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navbar-home-icon {
+  display: none;
+  color: inherit;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-home-text {
+    display: none;
+  }
+
+  .navbar-home-icon {
+    display: block;
+  }
 }
 </style>

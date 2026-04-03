@@ -1,6 +1,10 @@
 <template>
     <div class="article">
-        <h1>Toronto Shishimai Kai | トロント獅子舞会</h1>
+        <h1 class="title-lg">Toronto Shishimai Kai | トロント獅子舞会</h1>
+        <div class="title-sm">
+            <h1>Toronto Shishimai Kai</h1>
+            <p><strong>トロント獅子舞会</strong></p>
+        </div>
         <div id="sub-navigation">
             <a href="#about">About</a>
             <a href="#events">News and events</a>
@@ -88,13 +92,6 @@ const members = [
         content: '';
         padding-right: 0;
     }
-}
-
-.article h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    padding: 0;
-    margin: 0 0 1rem 0;
 }
 
 .section {
