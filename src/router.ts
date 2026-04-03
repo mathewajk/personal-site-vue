@@ -7,6 +7,7 @@ import {
   SITE_DEFAULT_DESCRIPTION,
   SITE_DEFAULT_TITLE,
   SHISHIMAI_ABOUT_FIRST_PARAGRAPH,
+  SHISHIMAI_OG_IMAGE,
   SHISHIMAI_PAGE_TITLE,
 } from './site-meta'
 
@@ -27,7 +28,7 @@ const routes = [
     meta: {
       title: SHISHIMAI_PAGE_TITLE,
       description: SHISHIMAI_ABOUT_FIRST_PARAGRAPH,
-      ogImage: '/edojishi.jpeg',
+      ogImage: SHISHIMAI_OG_IMAGE,
     },
   },
 ]
