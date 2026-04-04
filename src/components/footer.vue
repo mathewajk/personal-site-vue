@@ -32,6 +32,12 @@ const pages = [
   font-size: 0.9rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  .site-footer {
+    background-color: var(--color-link-muted);
+  }
+}
+
 .site-footer-inner {
   max-width: 1000px;
   display: flex;
