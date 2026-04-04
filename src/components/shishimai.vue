@@ -29,7 +29,8 @@
             <div class="section-content">
                 <h2>News and events</h2>
                 <h3>TSK at Toronto Taiko Festival 2026</h3>
-                <p>Toronto Shishimai Kai will be performing at the Toronto Taiko festival on August 8th and August 9th, 2026! <RouterLink to="/articles/toronto-taiko-festival-2026">Read more →</RouterLink></p>
+                <p>Toronto Shishimai Kai will be performing at the Toronto Taiko festival on August 8th and August 9th, 2026!</p>
+                <p>Joined by our instructor and special guest, Eien Hunter-Ishikawa, we will be performing Edo Kotobuki Jishi as a part of the festival concert on Saturday, August 8th. We will also be hosting a workshop and demonstration on Sunday, August 9th for a closer look as this fascinating art form. <RouterLink to="/articles/toronto-taiko-festival-2026">Read more →</RouterLink></p>
             </div>
         </div>
         <div id="members" class="section"> <h2>Members</h2>
