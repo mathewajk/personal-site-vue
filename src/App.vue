@@ -3,6 +3,7 @@ import { useSeoMeta } from '@unhead/vue'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { absoluteUrl } from './absolute-url'
+import Footer from './components/footer.vue'
 import Header from './components/header.vue'
 import { DEFAULT_OG_IMAGE, SITE_DEFAULT_DESCRIPTION, SITE_DEFAULT_TITLE } from './site-meta'
 
@@ -40,6 +41,9 @@ useSeoMeta({
 <template>
   <div class="wrapper" :class="{ home: isHeroLayout }">
     <Header />
-    <RouterView />
+    <main>
+      <RouterView />
+    </main>
+    <Footer />
   </div>
 </template>

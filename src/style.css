@@ -9,6 +9,8 @@
   --color-nav-on-hero: #ffffff;
   --color-border-subtle: #bbbbbb;
   --color-link-muted: rgb(239, 232, 236);
+  /* Matches header block height so the home splash can extend behind the nav */
+  --home-header-overlap: 5.5rem;
 }
 
 :root[data-theme='dark'] {
@@ -25,8 +27,7 @@
 body {
   box-sizing: border-box;
 
-  min-height: 550px;
-  height: 100vh;
+  min-height: max(100vh, 550px);
 
   margin: 0em;
   padding: 0em;
@@ -38,13 +39,17 @@ body {
 }
 
 #app {
-  height: 100%;
+  min-height: 100%;
 }
 
 .wrapper {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.wrapper.home > main {
+  margin-top: calc(-1 * var(--home-header-overlap));
 }
 
 .article {
@@ -126,12 +131,6 @@ tr a::after {
     background-position: center;
     background-repeat: no-repeat;
   }
-}
-
-.wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .markdown-body h2 {

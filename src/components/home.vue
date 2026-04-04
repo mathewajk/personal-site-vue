@@ -7,6 +7,7 @@ const socials = [{ url: 'https://github.com/mathewajk', title: 'github', alt: 'm
 </script>
 
 <template>
+  <div class="home-page">
     <div class="background-container"></div>
     <div class="home-about">
         <div class="about-name"></div>
@@ -32,6 +33,7 @@ const socials = [{ url: 'https://github.com/mathewajk', title: 'github', alt: 'm
             </div>
         </div>
     </div>
+  </div>
 </template>
 
 <style>
@@ -77,12 +79,20 @@ ul {
     color: var(--color-text);
 }
 
+.home-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 100svh;
+    padding-top: var(--home-header-overlap);
+}
+
 .home-about {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(2, 1fr);
 
-    margin-top: auto;
-    margin-bottom: auto;
+    flex: 1;
 
     text-align: center;
     
@@ -143,8 +153,8 @@ ul {
     .home-about {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: auto;
-        margin: 0em;
-        height: 95%;
+        flex: 1;
+        min-height: 0;
     }
 
     .about-name {

@@ -2,7 +2,7 @@
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faBars, faHome, faMoon, faSun, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faExternalLink, faHome, faMoon, faSun, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { themeIsDark, toggleStoredTheme } from '../theme'
 
 const pages = [
@@ -83,6 +83,7 @@ onUnmounted(() => {
               title="Sazanami Taiko Arts Ensemble"
             >
               Sazanami Taiko Arts Ensemble
+              <FontAwesomeIcon :icon="faExternalLink" class="nav-external-link-icon" aria-hidden="true" />
             </a>
             <RouterLink
               v-for="page in pages"
@@ -112,6 +113,7 @@ onUnmounted(() => {
                 @click="closeMenu"
                 >
                 Sazanami Taiko Arts Ensemble
+                <FontAwesomeIcon :icon="faExternalLink" class="nav-external-link-icon" aria-hidden="true" />
             </a>
             <RouterLink
               v-for="page in pages"
@@ -152,12 +154,10 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
-nav {
-  z-index: 10;
-}
 
 .header-container {
   padding: 1em 1em 0.5em 1em;
+  z-index: 10;
 }
 
 .navbar {
@@ -379,6 +379,13 @@ nav {
   display: none;
   color: inherit;
   font-size: 1.2em;
+}
+
+.nav-external-link-icon {
+  margin-inline-start: 0.35em;
+  font-size: 0.85em;
+  vertical-align: -0.1em;
+  opacity: 0.85;
 }
 
 @media screen and (max-width: 767px) {
