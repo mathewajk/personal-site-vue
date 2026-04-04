@@ -23,7 +23,7 @@
             </div>
         </div>
         <div id="events" class="section has-image">
-            <div class="section-image">
+            <div ref="gfmSectionEl" class="section-image">
                 <div class="gfm-embed" data-url="https://www.gofundme.com/f/toronto-shishimai-kai-debut-at-toronto-taiko-festival-2026/widget/large?sharesheet=undefined&attribution_id=sl:8fdfe715-ea02-476d-b805-757946fc3a76"></div>
             </div>
             <div class="section-content">
@@ -50,7 +50,53 @@
 </template>
 
 <script setup lang="ts">
+import { nextTick, onMounted, ref } from 'vue'
 import { SHISHIMAI_ABOUT_FIRST_PARAGRAPH } from '../site-meta'
+
+/** GoFundMe embed.js only runs on DOMContentLoaded; SPA routes mount later, so we mirror their iframe setup. */
+function mountGfmEmbeds(root: HTMLElement) {
+  const embeds = root.getElementsByClassName('gfm-embed')
+  for (let i = 0; i < embeds.length; i++) {
+    const el = embeds[i] as HTMLElement
+    if (el.querySelector('.gfm-embed-iframe')) continue
+    const url = el.getAttribute('data-url')
+    if (!url) continue
+    el.appendChild(createGfmIframe(url, el.getAttribute('data-partner')))
+  }
+}
+
+function createGfmIframe(url: string, partnerCode: string | null) {
+  const utmContent = window?.location?.hostname || 'none'
+  const parsedUrl = new URL(url)
+  parsedUrl.searchParams.set('utm_content', utmContent)
+  if (partnerCode) {
+    parsedUrl.searchParams.set('utm_medium', 'partner')
+    parsedUrl.searchParams.set('utm_source', partnerCode)
+  } else {
+    parsedUrl.searchParams.set('utm_medium', 'referral')
+    parsedUrl.searchParams.set('utm_source', 'widget')
+  }
+  const iframeSrc = `${parsedUrl}#:~:tcm-regime=GDPR&tcm-prompt=Hidden`
+  const iframe = document.createElement('iframe')
+  const widgetSize = parsedUrl.pathname.split('/')[4] || 'large'
+  if (widgetSize === 'small') iframe.setAttribute('height', '70')
+  else if (widgetSize === 'medium') iframe.setAttribute('height', '200')
+  else iframe.setAttribute('height', '500')
+  iframe.setAttribute('class', 'gfm-embed-iframe')
+  iframe.setAttribute('width', '100%')
+  iframe.setAttribute('frameborder', '0')
+  iframe.setAttribute('scrolling', 'no')
+  iframe.setAttribute('src', iframeSrc)
+  return iframe
+}
+
+const gfmSectionEl = ref<HTMLElement | null>(null)
+
+onMounted(() => {
+  nextTick(() => {
+    if (gfmSectionEl.value) mountGfmEmbeds(gfmSectionEl.value)
+  })
+})
 
 const members = [
     { name: 'Mathew Jacqmin-Kramer', role: 'Founder and Director', email: 'mathew@sazanamitaiko.net', 'bio': 'Mathew Jacqmin-Kramer is a long-time taiko player and recent transplant to Toronto. He combines a background in classical piano and composition for interactive media with study of traditional Japanese music through koto and shishimai to bring a multifaceted perspective to taiko performance and composition. As a member of the Great Lakes Taiko Center, he has performed with multiple groups, including the Godaiko Drummers, Raion Taiko, Sakura Japanese Instrumental Group, and his own taiko group, Sazanami Taiko Arts Ensemble. He began studying Edo Kotobuki Jishi with Eien Hunter-Ishikawa in 2024 and recently founded Toronto Shishimai Kai with the goal of bringing the study and performance of the Wakayama-ryū repertoire to the GTA.' },
