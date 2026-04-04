@@ -22,10 +22,15 @@
                 <p>Group membership is open to anyone interested in learning and performing the traditions of the Wakayama school. We welcome students of all ages and experience levels. For more information, please reach out to Mathew at <a href="mailto:mathew@sazanamitaiko.net" title="mathew@sazanamitaiko.net">mathew@sazanamitaiko.net</a>.</p>
             </div>
         </div>
-        <div id="events" class="section">
-            <h2>News and events</h2>
-            <h3>TSK at Toronto Taiko Festival 2026</h3>
-            <p>Toronto Shishimai Kai will be performing at the Toronto Taiko festival on August 8th and August 9th, 2026! <RouterLink to="/articles/toronto-taiko-festival-2026">Read more →</RouterLink></p>
+        <div id="events" class="section has-image">
+            <div class="section-image">
+                <div class="gfm-embed" data-url="https://www.gofundme.com/f/toronto-shishimai-kai-debut-at-toronto-taiko-festival-2026/widget/large?sharesheet=undefined&attribution_id=sl:8fdfe715-ea02-476d-b805-757946fc3a76"></div>
+            </div>
+            <div class="section-content">
+                <h2>News and events</h2>
+                <h3>TSK at Toronto Taiko Festival 2026</h3>
+                <p>Toronto Shishimai Kai will be performing at the Toronto Taiko festival on August 8th and August 9th, 2026! <RouterLink to="/articles/toronto-taiko-festival-2026">Read more →</RouterLink></p>
+            </div>
         </div>
         <div id="members" class="section"> <h2>Members</h2>
             <ul>
