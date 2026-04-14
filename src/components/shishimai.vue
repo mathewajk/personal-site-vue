@@ -16,6 +16,7 @@
                 <img src="/edojishi.jpeg" alt="Toronto Shishimai Kai">
             </div>
             <div class="section-content">
+                <h2>About</h2>
                 <p>{{ SHISHIMAI_ABOUT_FIRST_PARAGRAPH }}</p>
                 <p>We study in the tradition of premiere performing ensemble <a href="https://www.wakayamashachu.jp/" title="Wakayama Taneo Shachū">Wakayama Taneo Shachū (若山胤雄社中)</a>, which has been designated a Nationally Important Intangible Folk Cultural Asset in Japan, and we are committed to representing this tradition faithfully as we expand its practice to the GTA.</p>
                 <p>As a new group, as well as the first Wakayama-ryū (若山流) group in Eastern Canada, we are excited to be a part of a growing cohort of Wakayama-ryū groups across North America, including Vancouver, Portland, Minnesota, and Michigan, and are deeply grateful for their support as we begin our own journey.</p>
@@ -33,7 +34,8 @@
                 <p>Joined by our instructor and special guest, Eien Hunter-Ishikawa, we will be performing Edo Kotobuki Jishi as a part of the festival concert on Saturday, August 8th. We will also be hosting a workshop and demonstration on Sunday, August 9th for a closer look as this fascinating art form. <RouterLink to="/articles/toronto-taiko-festival-2026">Read more →</RouterLink></p>
             </div>
         </div>
-        <div id="members" class="section"> <h2>Members</h2>
+        <div id="members" class="section">
+            <h2>Members</h2>
             <ul>
                 <div v-for="member in members" :key="member.name">
                     <h3>{{ member.name }}</h3>
