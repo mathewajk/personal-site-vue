@@ -100,9 +100,9 @@ onMounted(() => {
 
 const members = [
     { name: 'Mathew Jacqmin-Kramer', role: 'Founder and Director', email: 'mathew@sazanamitaiko.net', 'bio': 'Mathew Jacqmin-Kramer is a long-time taiko player and recent transplant to Toronto. He combines a background in classical piano and composition for interactive media with study of traditional Japanese music through koto and shishimai to bring a multifaceted perspective to taiko performance and composition. As a member of the Great Lakes Taiko Center, he has performed with multiple groups, including the Godaiko Drummers, Raion Taiko, Sakura Japanese Instrumental Group, and his own taiko group, Sazanami Taiko Arts Ensemble. He began studying Edo Kotobuki Jishi with Eien Hunter-Ishikawa in 2024 and recently founded Toronto Shishimai Kai with the goal of bringing the study and performance of the Wakayama-ryū repertoire to the GTA.' },
-    { name: 'Josh Bagalacsa', 'Member'},
-    { name: 'Natalina Halas', 'Member'},
-    { name: 'Lauretta Cheng', 'Coordinator'}
+    { name: 'Josh Bagalacsa', role: 'Member'},
+    { name: 'Natalina Halas', role: 'Member'},
+    {name: 'Lauretta Cheng', role: 'Project Manager'}
 ]
 </script>
 
