@@ -36,9 +36,12 @@ const routes = [
 export const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior(_to, _from, savedPosition) {
+  scrollBehavior(to, _from, savedPosition) {
     if (savedPosition) {
       return savedPosition
+    }
+    if (to.hash) {
+      return { el: to.hash }
     }
     return { top: 0 }
   },
