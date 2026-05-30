@@ -100,12 +100,21 @@ const gfmSectionEl = ref<HTMLElement | null>(null)
 onMounted(() => {
   nextTick(() => {
     if (!gfmSectionEl.value) return
-    // On a direct page load, defer/module scripts run while readyState is 'interactive'
-    // and embed.js will create the iframe via its DOMContentLoaded handler shortly after.
-    // On SPA navigation, readyState is already 'complete' (DOMContentLoaded has long since
-    // fired and embed.js won't run again), so we create the iframe ourselves.
-    if (document.readyState !== 'complete') return
-    mountGfmEmbeds(gfmSectionEl.value)
+    if (document.readyState === 'complete') {
+      // DOMContentLoaded has already fired (SPA navigation, or Safari fired it before the
+      // module script ran). embed.js won't run again, so we create the iframe ourselves.
+      mountGfmEmbeds(gfmSectionEl.value)
+    } else {
+      // DOMContentLoaded is still pending. Register a fallback listener that creates the
+      // iframe only if embed.js didn't already handle it (e.g. in Safari, embed.js can fire
+      // its DOMContentLoaded handler before Vue has mounted, so it finds no .gfm-embed
+      // elements and does nothing — this catches that case).
+      document.addEventListener('DOMContentLoaded', () => {
+        if (gfmSectionEl.value && !gfmSectionEl.value.querySelector('.gfm-embed-iframe')) {
+          mountGfmEmbeds(gfmSectionEl.value)
+        }
+      }, { once: true })
+    }
   })
 })
 
