@@ -96,7 +96,13 @@ const gfmSectionEl = ref<HTMLElement | null>(null)
 
 onMounted(() => {
   nextTick(() => {
-    if (gfmSectionEl.value) mountGfmEmbeds(gfmSectionEl.value)
+    if (!gfmSectionEl.value) return
+    // On a direct page load, defer/module scripts run while readyState is 'interactive'
+    // and embed.js will create the iframe via its DOMContentLoaded handler shortly after.
+    // On SPA navigation, readyState is already 'complete' (DOMContentLoaded has long since
+    // fired and embed.js won't run again), so we create the iframe ourselves.
+    if (document.readyState !== 'complete') return
+    mountGfmEmbeds(gfmSectionEl.value)
   })
 })
 
