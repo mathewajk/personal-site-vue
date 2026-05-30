@@ -2,7 +2,29 @@
 
 ## August 8th, 2026: Concert performance
 
-More information coming soon!
+Toronto Taiko Festival’s Bang On! concert hits the stage August 8th at Randolph Theatre!
+
+This concert uplifts the diversity of, and nuance within, North American taiko styles and lineages. Bringing multiple ensembles together from across the region for a one-time showcase, Bang On! presents traditional pieces alongside new collaborations and contemporary repertoire.​ Spoken portions of this concert will include ASL interpretation.
+​
+Featuring performances by:
+- RAW Taiko (Toronto)
+- JCCC Kyowa Taiko (Toronto)
+- Toronto Shishimai Kai (Toronto)
+- Arashido Taiko (Toronto)
+- Ame no Ato (Montreal)
+- Arashi Daiko (Montreal)
+- Oto-Wa Taiko (Ottawa)
+- Kita no Taiko (Edmonton)
+- ...& guest artists!
+
+Event details:
+- **Location:** Randolph Theatre (736 Bathurst St, Toronto - venue is wheelchair accessible)
+- **Date:** Saturday August 8th, 2026
+- **Time:** Doors at 7:30, Show at 8pm
+- **Tickets:** Sliding scale tickets from $25-$55 available at [www.torontotaikofestival.org](https://www.torontotaikofestival.org)
+​
+This concert is gratefully funded by the [Ontario Arts Council](https://www.instagram.com/ontarioartscouncil/), [Toronto Arts Council](https://www.instagram.com/torontoartscouncil/) and [Canadian Heritage](https://www.instagram.com/cdn.heritage/).
+
 
 ## August 9th, 2026: Workshop
 

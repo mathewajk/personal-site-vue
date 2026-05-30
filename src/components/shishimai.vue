@@ -5,6 +5,7 @@
             <h1>Toronto Shishimai Kai</h1>
             <p><strong>トロント獅子舞会</strong></p>
         </div>
+        <img class="splash-image" src="/edojishi.jpeg" alt="Toronto Shishimai Kai">
         <div id="sub-navigation">
             <a href="#about">About</a>
             <a href="#events">News and events</a>
@@ -13,7 +14,9 @@
         </div>
         <div id="about" class="section has-image">
             <div class="section-image">
-                <img src="/edojishi.jpeg" alt="Toronto Shishimai Kai">
+                <div ref="gfmSectionEl" class="section-image">
+                    <div class="gfm-embed" data-url="https://www.gofundme.com/f/toronto-shishimai-kai-debut-at-toronto-taiko-festival-2026/widget/large?sharesheet=undefined&attribution_id=sl:8fdfe715-ea02-476d-b805-757946fc3a76"></div>
+                </div>
             </div>
             <div class="section-content">
                 <h2>About</h2>
@@ -24,8 +27,8 @@
             </div>
         </div>
         <div id="events" class="section has-image">
-            <div ref="gfmSectionEl" class="section-image">
-                <div class="gfm-embed" data-url="https://www.gofundme.com/f/toronto-shishimai-kai-debut-at-toronto-taiko-festival-2026/widget/large?sharesheet=undefined&attribution_id=sl:8fdfe715-ea02-476d-b805-757946fc3a76"></div>
+            <div class="section-image">
+                <img src="/Bang On poster 2026.png" alt="Bang On poster 2026" />
             </div>
             <div class="section-content">
                 <h2>News and events</h2>
@@ -196,4 +199,13 @@ const members = [
     max-height: 400px;
 }
 
+.splash-image {
+    width: 75%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    margin: 2rem auto;
+}
 </style>
