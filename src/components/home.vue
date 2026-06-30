@@ -14,7 +14,7 @@ const socials = [{ url: 'https://github.com/mathewajk', title: 'github', alt: 'm
             <h1>Mathew A. Jacqmin-Kramer</h1>
             
             <div>
-                <p>I am a taiko artist, composer, and web developer based in Toronto, ON.</p>
+                <p>I am a taiko artist, composer, web developer, and linguist based in Toronto, ON.</p>
 
                 <p>I offer in-person and online private lessons on:</p>
                 <ul class="social-links center-content">
