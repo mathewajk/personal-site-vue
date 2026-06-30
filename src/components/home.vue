@@ -17,7 +17,7 @@ const socials = [{ url: 'https://github.com/mathewajk', title: 'github', alt: 'm
                 <p>I am a taiko artist, composer, and web developer based in Toronto, ON.</p>
 
                 <p>I offer in-person and online private lessons on:</p>
-                <ul class="social-links">
+                <ul class="social-links center-content">
                     <li><span class="separator"></span><strong>taiko basics</strong></li>
                     <li><span class="separator"></span><strong>shime technique</strong></li>
                     <li><span class="separator"></span><strong>taiko set</strong></li>
@@ -29,7 +29,7 @@ const socials = [{ url: 'https://github.com/mathewajk', title: 'github', alt: 'm
                 <p>For more information, you can contact me at <a href="mailto:mathew@sazanamitaiko.net" title="mathew@sazanamitaiko.net">mathew@sazanamitaiko.net</a>.</p>
 
                 <p class="center-content">You can also find me on:</p>
-                <ul class="social-links">
+                <ul class="social-links center-content">
                     <li v-for="social in socials" :key="social.title">
                         <span class="separator"></span>
                         <a :href="social.url" :title="social.alt" target="_blank">{{ social.title }}</a>
@@ -37,7 +37,7 @@ const socials = [{ url: 'https://github.com/mathewajk', title: 'github', alt: 'm
                 </ul>
                 <div class="other-links">
                     <p class="center-content">Music activities:</p>
-                        <ul>
+                        <ul class="center-content">
                         <li><a href="https://music.glyph.cafe" title="music portfolio">music portfolio</a></li>
                         <li><RouterLink to="/shishimai">toronto shishimai kai</RouterLink></li>
                         <li><a href="https://sazanamitaiko.net" title="sazanami taiko arts ensemble">sazanami taiko arts ensemble</a></li>
@@ -77,7 +77,6 @@ p + p {
 
 ul {
     padding-left: 0px;
-    text-align: center;
 }
 
 .about-description ul.social-links {
