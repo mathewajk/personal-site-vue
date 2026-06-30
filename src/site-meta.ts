@@ -19,4 +19,4 @@ export const SHISHIMAI_OG_IMAGE = '/og-shishimai.jpg'
 
 /** First paragraph of the group description (also used for link previews). */
 export const SHISHIMAI_ABOUT_FIRST_PARAGRAPH =
-  'Toronto Shishimai Kai (TSK), founded January 2026, is a performing ensemble based in Toronto, Canada. We are dedicated to the practice and performance of Edo Kotobuki Jishi (江戸寿獅子), the traditional celebratory lion dance of Tokyo, and Edo Bayashi (江戸囃子), the traditional festival music of Tokyo.'
+  'Toronto Shishimai Kai (TSK), founded January 2026, is a performing ensemble based in Toronto, Ontario. We are dedicated to the practice and performance of Edo Kotobuki Jishi (江戸寿獅子), the traditional celebratory lion dance of Tokyo, and Edo Bayashi (江戸囃子), the traditional festival music of Tokyo.'
