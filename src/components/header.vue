@@ -265,7 +265,7 @@ onUnmounted(() => {
   outline: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1098px) {
   .nav-links-desktop {
     display: none;
   }

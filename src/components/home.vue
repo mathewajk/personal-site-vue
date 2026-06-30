@@ -10,30 +10,44 @@ const socials = [{ url: 'https://github.com/mathewajk', title: 'github', alt: 'm
   <div class="home-page">
     <div class="background-container"></div>
     <div class="home-about">
-        <div class="about-name"></div>
-        <div class="about-photo"></div>
         <div class="about-description">
             <h1>Mathew A. Jacqmin-Kramer</h1>
-            <p>I am a taiko artist, composer, web developer, and linguist.</p>
-            <p>You can find me on:</p>
-            <ul class="social-links">
-                <li v-for="social in socials" :key="social.title">
-                    <span class="separator"></span>
-                    <a :href="social.url" :title="social.alt" target="_blank">{{ social.title }}</a>
-                </li>
-            </ul>
-            <div class="other-links">
-                <p>Music activities:</p>
-                    <ul>
-                    <li><a href="https://music.glyph.cafe" title="music portfolio">music portfolio</a></li>
-                    <li><RouterLink to="/shishimai">toronto shishimai kai</RouterLink></li>
-                    <li><a href="https://sazanamitaiko.net" title="sazanami taiko arts ensemble">sazanami taiko arts ensemble</a></li>
-                    <li><a href="https://michigantaiko.net" title="great lakes taiko center">great lakes taiko center</a></li>
-                    </ul>
+            
+            <div>
+                <p>I am a taiko artist, composer, and web developer based in Toronto, ON.</p>
+
+                <p>I offer in-person and online private lessons on:</p>
+                <ul class="social-links">
+                    <li><span class="separator"></span><strong>taiko basics</strong></li>
+                    <li><span class="separator"></span><strong>shime technique</strong></li>
+                    <li><span class="separator"></span><strong>taiko set</strong></li>
+                    <li><span class="separator"></span><strong>katsugi</strong></li>
+                    <li><span class="separator"></span><strong>atarigane</strong></li>
+                    <li><span class="separator"></span><strong>and more!</strong></li>
+                </ul>
+
+                <p>For more information, you can contact me at <a href="mailto:mathew@sazanamitaiko.net" title="mathew@sazanamitaiko.net">mathew@sazanamitaiko.net</a>.</p>
+
+                <p class="center-content">You can also find me on:</p>
+                <ul class="social-links">
+                    <li v-for="social in socials" :key="social.title">
+                        <span class="separator"></span>
+                        <a :href="social.url" :title="social.alt" target="_blank">{{ social.title }}</a>
+                    </li>
+                </ul>
+                <div class="other-links">
+                    <p class="center-content">Music activities:</p>
+                        <ul>
+                        <li><a href="https://music.glyph.cafe" title="music portfolio">music portfolio</a></li>
+                        <li><RouterLink to="/shishimai">toronto shishimai kai</RouterLink></li>
+                        <li><a href="https://sazanamitaiko.net" title="sazanami taiko arts ensemble">sazanami taiko arts ensemble</a></li>
+                        <li><a href="https://michigantaiko.net" title="great lakes taiko center">great lakes taiko center</a></li>
+                        </ul>
+                </div>
             </div>
         </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <style>
@@ -46,10 +60,15 @@ h1 {
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 1em;
+    text-align: center;
 }
 
 p + p {
     margin-top: 1.5em;
+}
+
+.center-content {
+    text-align: center;
 }
 
 .about-description li {
@@ -58,6 +77,7 @@ p + p {
 
 ul {
     padding-left: 0px;
+    text-align: center;
 }
 
 .about-description ul.social-links {
@@ -90,58 +110,17 @@ ul {
 
 .home-about {
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(2, 1fr);
 
     flex: 1;
-
-    text-align: center;
     
     display: grid;
     align-items: center;
     justify-content: center;
-
-    padding: 0em 1em 0em 1em;
-}
-
-.about-name {
-    grid-row: 1;
-    grid-column: 1;
-
-    color: var(--color-nav-on-hero);
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.about-photo {    
-    grid-row: 1;
-    grid-column: 4;
-    align-self: center;
-    justify-self: center;
-}
-
-.about-photo .photo-frame {
-    position: relative;
-
-    height: 150px;
-    width: 150px;
-    overflow: hidden;
-
-    border-radius: 150px;
-    border: 5px solid;
-    border-color: var(--color-border-subtle);
-}
-
-.photo-frame img {
-    position: absolute;
-    width: 300px;
-    left: -50%;
-    top: -50%;
 }
 
 .about-description {
-    grid-row: 1;
-    grid-column: 2;
-    padding: 0em 0em 0em 1.5em;
+    margin: 2rem;
+    margin-left: calc(40vw + 2rem);
 }
 
 .other-links {
@@ -151,63 +130,33 @@ ul {
 @media screen and (max-width: 767px) {
 
     .home-about {
-        grid-template-rows: repeat(2, 1fr);
         grid-template-columns: auto;
         flex: 1;
         min-height: 0;
     }
 
-    .about-name {
-        grid-row: 1;
-        grid-column: 1;
-    }
-
-    .about-photo {
-        grid-row: 3 / 4;
-        grid-column: 1;
-    }
-    
-    .about-photo .photo-frame {
-        height: 100px;
-        width: 100px;
-    }
-
-    .photo-frame img {
-        position: absolute;
-        width: 200px;
-        left: -50%;
-        top: -50%;
-    }
-
     .about-description {
-        grid-row: 2;
-        grid-column: 1;
+        margin: 2rem;
         padding: 0;
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 767px) {
     .about-description {
-        margin-top: 200px;
-        grid-row: 2;
-        grid-column: 1;  
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-}
 
-@media screen and (max-width: 568px) {
-    .about-description {
-        margin-top: 290px;
-        grid-row: 2;
-        grid-column: 1;  
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .about-description {
-        margin-top: 320px;
-        grid-row: 2;
-        grid-column: 1;  
+    h1 {
+        margin-top: calc(50vh - 75px);
+        margin-bottom: 1rem;
     }
 }
 
