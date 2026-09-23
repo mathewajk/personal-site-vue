@@ -5,7 +5,7 @@
             <h1>Toronto Shishimai Kai</h1>
             <p><strong>トロント獅子舞会</strong></p>
         </div>
-        <img class="splash-image" src="/edojishi.jpeg" alt="Toronto Shishimai Kai">
+        <img class="splash-image" src="/ttf2026.jpeg" alt="Toronto Shishimai Kai at TTF 2026">
         <div id="sub-navigation">
             <a href="#about">About</a>
             <a href="#events">News and events</a>
