@@ -329,7 +329,6 @@ onUnmounted(() => {
 }
 
 .navbar .navbar-header {
-  font-weight: bold;
   color: var(--color-text);
 }
 

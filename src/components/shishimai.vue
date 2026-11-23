@@ -26,17 +26,18 @@
                 <p>{{ SHISHIMAI_ABOUT_FIRST_PARAGRAPH }}</p>
                 <p>We study in the tradition of premiere performing ensemble <a href="https://www.wakayamashachu.jp/" title="Wakayama Taneo Shachū">Wakayama Taneo Shachū (若山胤雄社中)</a>, which has been designated a Nationally Important Intangible Folk Cultural Asset in Japan, and we are committed to representing this tradition faithfully as we expand its practice to the GTA.</p>
                 <p>As a new group, as well as the first Wakayama-ryū (若山流) group in Eastern Canada, we are excited to be a part of a growing cohort of Wakayama-ryū groups across North America, including Vancouver, Portland, Minnesota, and Michigan, and are deeply grateful for their support as we begin our own journey.</p>
+                <p>We are also deeply grateful to our teachers, Kyosuke Suzuki Sensei and Eien Hunter-Ishikawa, with whom we continue to work closely to ensure the quality of our performances.</p>
                 <p>Group membership is open to anyone interested in learning and performing the traditions of the Wakayama school. We welcome students of all ages and experience levels. For more information, please reach out to Mathew at <a href="mailto:mathew@sazanamitaiko.net" title="mathew@sazanamitaiko.net">mathew@sazanamitaiko.net</a>.</p>
             </div>
         </div>
         <div id="events" class="section">
             <div class="section-content">
                 <h2>News and events</h2>
-                <h3>JCCC Oshogatsukai 2027</h3>
+                <h3>JCCC Oshogatsu Kai 2027</h3>
                 <img src="/Oshogatsukai-banner.jpg" alt="JCCC Oshogatsukai 2027 banner" class="section-image-img"/>
-                <p>We are excited to announce that we will be performing at JCCC's annual new years event on January 17th, 2027! Joined once again by our instructor and special guest, Eien Hunter-Ishikawa, we will be performing both Edo Kotobuki Jishi and Neri Aruki (walking around the venue) as a part of the day's festivities.</p>
+                <p>We are excited to announce that we will be performing at JCCC's annual new years event, <a href="https://jccc.on.ca/event/2027/01/oshogatsu-kai-2027" target="_blank">Oshogatsu Kai</a>, on January 17th, 2027! Joined once again by our instructor and special guest Eien Hunter-Ishikawa, we will be performing both Edo Kotobuki Jishi and Neri Aruki (walking around the venue) as a part of the day's festivities.</p>
                 
-                <h3>TSK at Toronto Taiko Festival 2026</h3>
+                <h3>Toronto Taiko Festival 2026</h3>
                 <img src="/Bang On poster 2026.png" alt="Bang On poster 2026" class="section-image-img"/>
                 <p>Toronto Shishimai Kai will be performing at the Toronto Taiko festival on August 8th and August 9th, 2026!</p>
                 <p>Joined by our instructor and special guest, Eien Hunter-Ishikawa, we will be performing Edo Kotobuki Jishi as a part of the festival concert on Saturday, August 8th. We will also be hosting a workshop and demonstration on Sunday, August 9th for a closer look as this fascinating art form. <RouterLink to="/articles/toronto-taiko-festival-2026">Read more →</RouterLink></p>
@@ -128,7 +129,8 @@ const members = [
     { name: 'Mathew Jacqmin-Kramer', role: 'Founder and Director', email: 'mathew@sazanamitaiko.net', 'bio': 'Mathew Jacqmin-Kramer is a long-time taiko player and recent transplant to Toronto. He combines a background in classical piano and composition for interactive media with study of traditional Japanese music through koto and shishimai to bring a multifaceted perspective to taiko performance and composition. As a member of the Great Lakes Taiko Center, he has performed with multiple groups, including the Godaiko Drummers, Raion Taiko, Sakura Japanese Instrumental Group, and his own taiko group, Sazanami Taiko Arts Ensemble. He began studying Edo Kotobuki Jishi with Eien Hunter-Ishikawa in 2024 and recently founded Toronto Shishimai Kai with the goal of bringing the study and performance of the Wakayama-ryū repertoire to the GTA.' },
     { name: 'Josh Bagalacsa', role: 'Member'},
     { name: 'Natalina Halas', role: 'Member'},
-    {name: 'Lauretta Cheng', role: 'Coordinator'}
+    { name: 'Antonn Esquivel', role: 'Member'},
+    { name: 'Lauretta Cheng', role: 'Coordinator'}
 ]
 </script>
 
@@ -221,6 +223,12 @@ const members = [
     min-height: 18rem;
 }
 
+@media screen and (max-width: 767px) {
+    .splash {
+        height: 30vh;
+    }
+}
+
 .splash::after {
     content: "";
     position: absolute;
@@ -243,4 +251,9 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+p + h3 {
+    margin-top: 2rem;
+}
+
 </style>
