@@ -5,7 +5,7 @@
             <h1>Toronto Shishimai Kai</h1>
             <p><strong>トロント獅子舞会</strong></p>
         </div>
-        <img class="splash-image" src="/ttf2026.jpeg" alt="Toronto Shishimai Kai at TTF 2026">
+        <img class="splash-image" src="/AGI_4042web.jpg" alt="Toronto Shishimai Kai at TTF 2026">
         <div id="sub-navigation">
             <a href="#about">About</a>
             <a href="#events">News and events</a>
@@ -26,13 +26,15 @@
                 <p>Group membership is open to anyone interested in learning and performing the traditions of the Wakayama school. We welcome students of all ages and experience levels. For more information, please reach out to Mathew at <a href="mailto:mathew@sazanamitaiko.net" title="mathew@sazanamitaiko.net">mathew@sazanamitaiko.net</a>.</p>
             </div>
         </div>
-        <div id="events" class="section has-image">
-            <div class="section-image">
-                <img src="/Bang On poster 2026.png" alt="Bang On poster 2026" />
-            </div>
+        <div id="events" class="section">
             <div class="section-content">
                 <h2>News and events</h2>
+                <h3>JCCC Oshogatsukai 2027</h3>
+                <img src="/Oshogatsukai-banner.jpg" alt="JCCC Oshogatsukai 2027 banner" class="section-image-img"/>
+                <p>We are excited to announce that we will be performing at JCCC's annual new years event on January 17th, 2027! Joined once again by our instructor and special guest, Eien Hunter-Ishikawa, we will be performing both Edo Kotobuki Jishi and Neri Aruki (walking around the venue) as a part of the day's festivities.</p>
+                
                 <h3>TSK at Toronto Taiko Festival 2026</h3>
+                <img src="/Bang On poster 2026.png" alt="Bang On poster 2026" class="section-image-img"/>
                 <p>Toronto Shishimai Kai will be performing at the Toronto Taiko festival on August 8th and August 9th, 2026!</p>
                 <p>Joined by our instructor and special guest, Eien Hunter-Ishikawa, we will be performing Edo Kotobuki Jishi as a part of the festival concert on Saturday, August 8th. We will also be hosting a workshop and demonstration on Sunday, August 9th for a closer look as this fascinating art form. <RouterLink to="/articles/toronto-taiko-festival-2026">Read more →</RouterLink></p>
             </div>
@@ -191,6 +193,12 @@ const members = [
 .section-image {
     padding-top: 1.25rem;
     flex: 1;
+}
+
+.section-image-img {
+    width: auto;
+    height: auto;
+    max-height: 300px;
 }
 
 @media screen and (max-width: 1024px) {
