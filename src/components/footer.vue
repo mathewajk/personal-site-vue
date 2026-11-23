@@ -1,8 +1,8 @@
 <script setup lang="ts">
 /** Internal routes mirrored from the header nav (home is listed separately). */
 const pages = [
-  { url: '/shishimai', title: 'toronto shishimai kai' },
-  { url: '/articles/cv', title: 'cv' },
+  { url: '/shishimai', title: 'Toronto Shishimai Kai' },
+  { url: '/articles/cv', title: 'CV' },
 ]
 </script>
 
@@ -12,14 +12,14 @@ const pages = [
       <nav class="site-footer-sitemap" aria-label="Site map">
         <ul class="site-footer-links">
           <li>
-            <RouterLink to="/">home</RouterLink>
+            <RouterLink to="/">Home</RouterLink>
           </li>
           <li v-for="page in pages" :key="page.url">
             <RouterLink :to="page.url">{{ page.title }}</RouterLink>
           </li>
         </ul>
       </nav>
-      <p class="site-footer-copy">© mathew a. jacqmin-kramer 2026</p>
+      <p class="site-footer-copy">© Mathew A. Jacqmin-Kramer 2026</p>
     </div>
   </footer>
 </template>
@@ -27,15 +27,10 @@ const pages = [
 <style scoped>
 .site-footer {
   padding: 1.5rem 2rem;
-  background-color: var(--color-link);
-  color: white;
+  background-color: var(--color-bg);
+  color: var(--color-text-muted);
   font-size: 0.9rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  .site-footer {
-    background-color: var(--color-link-muted);
-  }
+  border-top: 1px solid var(--color-border-subtle);
 }
 
 .site-footer-inner {
@@ -55,13 +50,20 @@ const pages = [
 }
 
 .site-footer-links a {
-  color: white;
+  color: var(--color-text);
   text-decoration: none;
   text-underline-offset: 0.15em;
 }
 
-.site-footer-links a:hover {
-  text-decoration-thickness: 2px;
+.site-footer-links a:hover,
+.site-footer-links a:focus-visible,
+.site-footer-links a.router-link-active {
+  color: var(--color-link);
+}
+
+.site-footer-links a:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
 }
 
 .site-footer-copy {

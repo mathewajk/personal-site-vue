@@ -5,13 +5,13 @@
             <h1>Toronto Shishimai Kai</h1>
             <p><strong>トロント獅子舞会</strong></p>
         </div>
-        <img class="splash-image" src="/AGI_4042web.jpg" alt="Toronto Shishimai Kai at TTF 2026">
         <div id="sub-navigation">
             <a href="#about">About</a>
             <a href="#events">News and events</a>
             <a href="#members">Members</a>
             <a href="#contact">Contact</a>
         </div>
+        <img class="splash-image" src="/AGI_4042web.jpg" alt="Toronto Shishimai Kai at TTF 2026">
         <div id="about" class="section has-image">
             <div class="section-image">
                 <div ref="gfmSectionEl" class="section-image">
@@ -143,29 +143,24 @@ const members = [
 }
 
 #sub-navigation a {
-    color: var(--color-link);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#sub-navigation a + a::before {
-    content: '|';
-    padding-right: 1em;
     color: var(--color-text);
+    text-decoration: none;
+    text-underline-offset: 0.2em;
 }
 
-#sub-navigation a:hover {
-    text-decoration: underline;
+#sub-navigation a:hover,
+#sub-navigation a:focus-visible {
+    color: var(--color-link);
+}
+
+#sub-navigation a:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
 }
 
 @media screen and (max-width: 767px) {
     #sub-navigation {
         flex-direction: column;
-    }
-
-    #sub-navigation a + a::before {
-        content: '';
-        padding-right: 0;
     }
 }
 
@@ -173,7 +168,7 @@ const members = [
     width: 100%;
     margin-bottom: 2rem;
     max-width: 1000px;
-    border-bottom: 1px solid var(--color-link-muted);
+    border-bottom: 1px solid var(--color-border-subtle);
     padding-bottom: 2rem;
 }
 
@@ -217,12 +212,17 @@ const members = [
 }
 
 .splash-image {
-    width: 75%;
+    width: 90%;
     height: auto;
     max-height: 500px;
     object-fit: cover;
     object-position: center;
-    border-radius: 10px;
     margin: 2rem auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 </style>

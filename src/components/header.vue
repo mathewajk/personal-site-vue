@@ -82,7 +82,7 @@ onUnmounted(() => {
               rel="noopener noreferrer"
               title="Sazanami Taiko Arts Ensemble"
             >
-              Sazanami Taiko Arts Ensemble
+              Sazanami
               <FontAwesomeIcon :icon="faExternalLink" class="nav-external-link-icon" aria-hidden="true" />
             </a>
             <RouterLink
@@ -112,7 +112,7 @@ onUnmounted(() => {
                 title="Sazanami Taiko Arts Ensemble"
                 @click="closeMenu"
                 >
-                Sazanami Taiko Arts Ensemble
+                Sazanami
                 <FontAwesomeIcon :icon="faExternalLink" class="nav-external-link-icon" aria-hidden="true" />
             </a>
             <RouterLink
@@ -126,7 +126,7 @@ onUnmounted(() => {
               {{ page.title }}
             </RouterLink>
           </div>
-          <a class="nav-contact" href="mailto:mathew@mathewkramer.io" title="mathew@mathewkramer.io">Contact</a>
+          <a class="nav-contact" href="mailto:mathew@sazanamitaiko.net" title="mathew@sazanamitaiko.net">Contact</a>
           <button
             type="button"
             class="theme-toggle"
@@ -229,7 +229,7 @@ onUnmounted(() => {
   background: none;
   font: inherit;
   cursor: pointer;
-  color: var(--color-link);
+  color: var(--color-text);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -237,8 +237,13 @@ onUnmounted(() => {
 }
 
 .theme-toggle-icon {
-  color: var(--color-link);
+  color: inherit;
   font-size: 1.15em;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  color: var(--color-link);
 }
 
 .theme-toggle:focus-visible {
@@ -247,7 +252,25 @@ onUnmounted(() => {
 }
 
 .navbar a {
+  color: var(--color-text);
+  text-decoration: none;
+  text-underline-offset: 0.2em;
+}
+
+.navbar a:hover,
+.navbar a:focus-visible {
   color: var(--color-link);
+}
+
+.navbar a:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+.navbar .menu-item.router-link-active,
+.navbar .dropdown-link.router-link-active {
+  color: var(--color-link);
+  text-decoration: underline;
 }
 
 .dropdown-link {
@@ -255,7 +278,7 @@ onUnmounted(() => {
   padding: 0.65rem 1rem;
   text-align: left;
   text-decoration: none;
-  color: var(--color-link);
+  color: var(--color-text);
   border-radius: 4px;
 }
 
@@ -302,32 +325,30 @@ onUnmounted(() => {
     display: flex;
   }
 
-  .navbar .bgwhite a {
-    color: var(--color-link);
-  }
-
   /*
-   * 768–1024: home still uses split hero + light column; collapsed controls sit on
-   * the light side — use accent. ≤767: hero stacks under nav — white on hero.
+   * 768–1098: home still uses the split hero, and the collapsed controls sit on
+   * the light column. ≤767: the hero stacks under the nav, so those controls are white.
    */
-  .home .navbar .nav-contact {
-    color: var(--color-link);
-  }
-
+  .home .navbar .nav-contact,
   .home .navbar .theme-toggle,
   .home .navbar .theme-toggle-icon,
   .home .navbar .nav-menu-toggle,
   .home .navbar .nav-menu-toggle-icon {
+    color: var(--color-text);
+  }
+
+  .home .navbar .nav-contact:hover,
+  .home .navbar .nav-contact:focus-visible,
+  .home .navbar .theme-toggle:hover,
+  .home .navbar .theme-toggle:focus-visible,
+  .home .navbar .nav-menu-toggle:hover,
+  .home .navbar .nav-menu-toggle:focus-visible {
     color: var(--color-link);
   }
 
   .home .navbar .theme-toggle:focus-visible,
   .home .navbar .nav-menu-toggle:focus-visible {
     outline-color: var(--color-link);
-  }
-
-  .home .navbar .nav-dropdown a {
-    color: var(--color-link);
   }
 
   .home .navbar .nav-dropdown a:hover,
@@ -351,12 +372,21 @@ onUnmounted(() => {
     .home .navbar .nav-menu-toggle:focus-visible {
       outline-color: var(--color-nav-on-hero);
     }
+
+    .home .navbar .nav-contact:hover,
+    .home .navbar .nav-contact:focus-visible,
+    .home .navbar .theme-toggle:hover,
+    .home .navbar .theme-toggle:focus-visible,
+    .home .navbar .nav-menu-toggle:hover,
+    .home .navbar .nav-menu-toggle:focus-visible {
+      color: var(--color-nav-on-hero);
+    }
   }
 }
 
 .navbar .navbar-header {
   font-weight: bold;
-  color: var(--color-nav-heading);
+  color: var(--color-text);
 }
 
 .home .navbar .navbar-header a {
@@ -365,7 +395,7 @@ onUnmounted(() => {
 }
 
 .navbar .navbar-header a {
-  color: var(--color-nav-heading);
+  color: var(--color-text);
 }
 
 .navbar-home-link {

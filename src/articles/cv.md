@@ -26,10 +26,10 @@
 
 | | | |
 | ---: | :--- | :--- |
-| **2024-2025** | Technical Lead, ECoach, Center for Academic Innovation | [https://ecoach.ai.umich.edu](https://ecoach.ai.umich.edu) |
-| **2022-2023** | Lead Developer, Kaki: Pitch-accent study Tool for Japanese | [https://github.com/mathewajk/Kaki](https://github.com/mathewajk/Kaki) |
-| **2021-2022** | Developer and Consultant, YouSpeak, University of Michigan  | [https://github.com/mathewajk/LingTube/tree/main/youspeak](https://github.com/mathewajk/LingTube/tree/main/youspeak) |
-| **2019-2022** | Lead Developer, LingTube + YouDePP, University of Michigan | [https://github.com/mathewajk/LingTube](https://github.com/mathewajk/LingTube) |
+| **2024-2025** | Technical Lead, ECoach, Center for Academic Innovation | [ECoach](https://ecoach.ai.umich.edu) |
+| **2022-2023** | Lead Developer, Kaki: Pitch-accent study Tool for Japanese | [Kaki](https://github.com/mathewajk/Kaki) |
+| **2021-2022** | Developer and Consultant, YouSpeak, University of Michigan  | [YouSpeak](https://github.com/mathewajk/LingTube/tree/main/youspeak) |
+| **2019-2022** | Lead Developer, LingTube + YouDePP, University of Michigan | [LingTube](https://github.com/mathewajk/LingTube) |
 
 
 ### Other experience
@@ -50,9 +50,9 @@
 
 ### Journal articles
 
-- **Jacqmin-Kramer, M. A.**, Boland, J. E., & Queen, R. _Getting to know_ them: _The influence of familiarity on the production of singular specific_ they (under revision). Preprint available at https://psyarxiv.com/v5yjz.
-- Levshina, N., Namboodiripad, S., Allassonnière-Tang, M., **Jacqmin-Kramer, M. A.**, Talamo, L., Verkerk, A., Wilmoth, S., Rodriguez, G. G., Gupton, T., Kidd, E., Liu, Z., Naccarato, C., Nordlinger, R., Panova, A., and Stoynova, N. (Under review). _Why we need a gradient approach to word order._ Linguistics: An Interdisciplinary Journal of the Language Sciences. https://doi.org/10.31234/osf.io/yg9bf (preprint)
-- Xiang, M., **Jacqmin-Kramer, M. A.**, & Nordmeyer, A. E. (2020). _An informativity-based account of negation complexity._ Journal of Experimental Psychology: Learning, Memory, and Cognition, 46(10), 1857–1867. https://doi.org/10.1037/xlm0000851
+- **Jacqmin-Kramer, M. A.**, Boland, J. E., & Queen, R. _Getting to know_ them: _The influence of familiarity on the production of singular specific_ they (under revision). Preprint available at [PsyArXiv](https://psyarxiv.com/v5yjz).
+- Levshina, N., Namboodiripad, S., Allassonnière-Tang, M., **Jacqmin-Kramer, M. A.**, Talamo, L., Verkerk, A., Wilmoth, S., Rodriguez, G. G., Gupton, T., Kidd, E., Liu, Z., Naccarato, C., Nordlinger, R., Panova, A., and Stoynova, N. (Under review). _Why we need a gradient approach to word order._ Linguistics: An Interdisciplinary Journal of the Language Sciences. [preprint](https://doi.org/10.31234/osf.io/yg9bf)
+- Xiang, M., **Jacqmin-Kramer, M. A.**, & Nordmeyer, A. E. (2020). _An informativity-based account of negation complexity._ Journal of Experimental Psychology: Learning, Memory, and Cognition, 46(10), 1857–1867. [DOI](https://doi.org/10.1037/xlm0000851)
 
 
 ### Conference proceedings
@@ -60,8 +60,8 @@
 - Cheng, L. S. P., **Jacqmin-Kramer, M. A.**, Upreti, R., and Namboodiripad, S. (2022). _Moving past indirect proxies for language experience: 'Native speaker' and residential history are poor predictors of language behavior._ To appear in the proceedings of the the 44th Annual Meeting of the Cognitive Science Society.
 - Liu, Z., Upreti, R., **Jacqmin-Kramer, M. A.**, and and Namboodiripad, S. (2022). _Does one size fit all in crosslinguistic dependency length minimization?_ To appear in the proceedings of the the 44th Annual Meeting of the Cognitive Science Society.
 - Namboodiripad, S., Cuneo, N., **Jacqmin-Kramer, M. A.**, Sedarous, Y., Bisnath, F., Sugimoto, Y., and Goldberg, A. (2022). _Backgroundedness predicts island status of non-finite adjuncts in English._ To appear in the proceedings of the the 44th Annual Meeting of the Cognitive Science Society.
-- **Jacqmin-Kramer, A.** (2021). _Dependency Lengths in Speech and Writing: A Cross-Linguistic Comparison via YouDePP, a Pipeline for Scraping and Parsing YouTube Captions._ Proceedings of the Society for Computation in Linguistics, 4(1). https://doi.org/10.7275/PZ9G-D780
-- **Jacqmin-Kramer, A.**, & Liu, Z. (2021). _A Data-driven Approach to Crosslinguistic Structural Biases._ Proceedings of the Society for Computation in Linguistics, 4(1). https://doi.org/10.7275/QFRB-A654
+- **Jacqmin-Kramer, A.** (2021). _Dependency Lengths in Speech and Writing: A Cross-Linguistic Comparison via YouDePP, a Pipeline for Scraping and Parsing YouTube Captions._ Proceedings of the Society for Computation in Linguistics, 4(1). [DOI](https://doi.org/10.7275/PZ9G-D780)
+- **Jacqmin-Kramer, A.**, & Liu, Z. (2021). _A Data-driven Approach to Crosslinguistic Structural Biases._ Proceedings of the Society for Computation in Linguistics, 4(1). [DOI](https://doi.org/10.7275/QFRB-A654)
 
 
 ### Posters

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-
 :root {
   --color-bg: #ffffff;
   --color-text: #111111;
@@ -8,7 +6,6 @@
   --color-nav-heading: rgb(164, 32, 109);
   --color-nav-on-hero: #ffffff;
   --color-border-subtle: #bbbbbb;
-  --color-link-muted: rgb(239, 232, 236);
   /* Matches header block height so the home splash can extend behind the nav */
   --home-header-overlap: 5.5rem;
 }
@@ -21,7 +18,6 @@
   --color-nav-heading: rgb(223, 105, 174);
   --color-nav-on-hero: #ffffff;
   --color-border-subtle: #555555;
-  --color-link-muted: rgb(95, 24, 65);
 }
 
 body {
@@ -95,13 +91,9 @@ td:last-child {
 }
 
 tr a {
-  text-decoration: none;
-  font-size: 0.75em;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
   color: var(--color-link);
-}
-
-tr a::after {
-  content: ' >'
 }
 
 .background-container {
@@ -114,7 +106,7 @@ tr a::after {
   width: 40vw;
   height: 100%;
 
-  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.10), rgba(117, 19, 93, 0.90)), url("/self-taiko-2.jpg");
+  background-image: linear-gradient(to bottom, rgba(72, 10, 52, 0.72) 0%, rgba(117, 19, 93, 0.34) 24%, rgba(117, 19, 93, 0.14) 100%), url("/self-taiko-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -126,7 +118,7 @@ tr a::after {
     width: 100%;
     height: 50vh;
 
-    background-image: linear-gradient(to top, rgba(245, 246, 252, 0.10), rgba(117, 19, 93, 0.90)), url("/self-taiko-2.jpg");
+    background-image: linear-gradient(to bottom, rgba(72, 10, 52, 0.72) 0%, rgba(117, 19, 93, 0.34) 24%, rgba(117, 19, 93, 0.14) 100%), url("/self-taiko-2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
