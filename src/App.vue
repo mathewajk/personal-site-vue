@@ -8,8 +8,8 @@ import Header from './components/header.vue'
 import { DEFAULT_OG_IMAGE, SITE_DEFAULT_DESCRIPTION, SITE_DEFAULT_TITLE } from './site-meta'
 
 const route = useRoute()
-/** Matches pages that render the hero `background-container` (see home.vue). */
-const isHeroLayout = computed(() => route.path === '/')
+/** Pages whose top image sits under the navigation. */
+const isHeroLayout = computed(() => route.path === '/' || route.path === '/shishimai')
 
 const pageTitle = computed(
   () => (route.meta.title as string | undefined) ?? SITE_DEFAULT_TITLE,
@@ -39,7 +39,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="wrapper" :class="{ home: isHeroLayout }">
+  <div class="wrapper" :class="{ hero: isHeroLayout }">
     <Header />
     <main>
       <RouterView />

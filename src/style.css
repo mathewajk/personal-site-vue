@@ -44,7 +44,7 @@ body {
   flex-direction: column;
 }
 
-.wrapper.home > main {
+.wrapper.hero > main {
   margin-top: calc(-1 * var(--home-header-overlap));
 }
 
@@ -97,32 +97,17 @@ tr a {
 }
 
 .background-container {
-  position: absolute;
-  z-index: -10;
+  position: relative;
+  z-index: 0;
 
-  top: 0px;
-  left: 0px;
-
-  width: 40vw;
-  height: 100%;
+  width: 100%;
+  height: 100vh;
+  min-height: 18rem;
 
   background-image: linear-gradient(to bottom, rgba(72, 10, 52, 0.72) 0%, rgba(117, 19, 93, 0.34) 24%, rgba(117, 19, 93, 0.14) 100%), url("/self-taiko-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
-}
-
-@media screen and (max-width: 767px) {
-  .background-container {
-    width: 100%;
-    height: 50vh;
-
-    background-image: linear-gradient(to bottom, rgba(72, 10, 52, 0.72) 0%, rgba(117, 19, 93, 0.34) 24%, rgba(117, 19, 93, 0.14) 100%), url("/self-taiko-2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 }
 
 .markdown-body h2 {

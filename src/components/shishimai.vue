@@ -1,4 +1,8 @@
 <template>
+    <div class="shishimai-page">
+        <div class="splash">
+            <img class="splash-image" src="/AGI_4042web.jpg" alt="Toronto Shishimai Kai at TTF 2026">
+        </div>
     <div class="article">
         <h1 class="title-lg">Toronto Shishimai Kai | トロント獅子舞会</h1>
         <div class="title-sm">
@@ -11,7 +15,6 @@
             <a href="#members">Members</a>
             <a href="#contact">Contact</a>
         </div>
-        <img class="splash-image" src="/AGI_4042web.jpg" alt="Toronto Shishimai Kai at TTF 2026">
         <div id="about" class="section has-image">
             <div class="section-image">
                 <div ref="gfmSectionEl" class="section-image">
@@ -53,6 +56,7 @@
             <h2>Contact</h2>
             <p>For booking and other inquiries, please contact Mathew at <a href="mailto:mathew@sazanamitaiko.net" title="mathew@sazanamitaiko.net">mathew@sazanamitaiko.net</a>.</p>
         </div>
+    </div>
     </div>
 </template>
 
@@ -211,13 +215,27 @@ const members = [
     max-height: 400px;
 }
 
+.splash {
+    position: relative;
+    height: 50vh;
+    min-height: 18rem;
+}
+
+.splash::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(22, 8, 18, 0.62) 0%, rgba(22, 8, 18, 0.16) 24%, rgba(22, 8, 18, 0) 48%);
+    pointer-events: none;
+}
+
 .splash-image {
-    width: 90%;
-    height: auto;
-    max-height: 500px;
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
-    margin: 2rem auto;
+    margin: 0;
 }
 
 ul {

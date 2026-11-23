@@ -156,8 +156,9 @@ onUnmounted(() => {
 <style scoped>
 
 .header-container {
-  padding: 1em 1em 0.5em 1em;
+  position: relative;
   z-index: 10;
+  padding: 1em 1em 0.5em 1em;
 }
 
 .navbar {
@@ -325,63 +326,6 @@ onUnmounted(() => {
     display: flex;
   }
 
-  /*
-   * 768–1098: home still uses the split hero, and the collapsed controls sit on
-   * the light column. ≤767: the hero stacks under the nav, so those controls are white.
-   */
-  .home .navbar .nav-contact,
-  .home .navbar .theme-toggle,
-  .home .navbar .theme-toggle-icon,
-  .home .navbar .nav-menu-toggle,
-  .home .navbar .nav-menu-toggle-icon {
-    color: var(--color-text);
-  }
-
-  .home .navbar .nav-contact:hover,
-  .home .navbar .nav-contact:focus-visible,
-  .home .navbar .theme-toggle:hover,
-  .home .navbar .theme-toggle:focus-visible,
-  .home .navbar .nav-menu-toggle:hover,
-  .home .navbar .nav-menu-toggle:focus-visible {
-    color: var(--color-link);
-  }
-
-  .home .navbar .theme-toggle:focus-visible,
-  .home .navbar .nav-menu-toggle:focus-visible {
-    outline-color: var(--color-link);
-  }
-
-  .home .navbar .nav-dropdown a:hover,
-  .home .navbar .nav-dropdown a:focus-visible {
-    background: color-mix(in srgb, var(--color-link) 14%, transparent);
-  }
-
-  @media screen and (max-width: 767px) {
-    .home .navbar .nav-contact {
-      color: var(--color-nav-on-hero);
-    }
-
-    .home .navbar .theme-toggle,
-    .home .navbar .theme-toggle-icon,
-    .home .navbar .nav-menu-toggle,
-    .home .navbar .nav-menu-toggle-icon {
-      color: var(--color-nav-on-hero);
-    }
-
-    .home .navbar .theme-toggle:focus-visible,
-    .home .navbar .nav-menu-toggle:focus-visible {
-      outline-color: var(--color-nav-on-hero);
-    }
-
-    .home .navbar .nav-contact:hover,
-    .home .navbar .nav-contact:focus-visible,
-    .home .navbar .theme-toggle:hover,
-    .home .navbar .theme-toggle:focus-visible,
-    .home .navbar .nav-menu-toggle:hover,
-    .home .navbar .nav-menu-toggle:focus-visible {
-      color: var(--color-nav-on-hero);
-    }
-  }
 }
 
 .navbar .navbar-header {
@@ -389,9 +333,48 @@ onUnmounted(() => {
   color: var(--color-text);
 }
 
-.home .navbar .navbar-header a {
-  font-weight: bold;
+.hero .navbar .navbar-header a,
+.hero .navbar .nav-links-desktop a,
+.hero .navbar .nav-contact,
+.hero .navbar .theme-toggle,
+.hero .navbar .theme-toggle-icon,
+.hero .navbar .nav-menu-toggle,
+.hero .navbar .nav-menu-toggle-icon {
   color: var(--color-nav-on-hero);
+}
+
+.hero .navbar .navbar-header a:hover,
+.hero .navbar .navbar-header a:focus-visible,
+.hero .navbar .nav-links-desktop a:hover,
+.hero .navbar .nav-links-desktop a:focus-visible,
+.hero .navbar .nav-contact:hover,
+.hero .navbar .nav-contact:focus-visible,
+.hero .navbar .theme-toggle:hover,
+.hero .navbar .theme-toggle:focus-visible,
+.hero .navbar .nav-menu-toggle:hover,
+.hero .navbar .nav-menu-toggle:focus-visible,
+.hero .navbar .menu-item.router-link-active {
+  color: var(--color-nav-on-hero);
+}
+
+.hero .navbar a:focus-visible,
+.hero .navbar .theme-toggle:focus-visible,
+.hero .navbar .nav-menu-toggle:focus-visible {
+  outline-color: var(--color-nav-on-hero);
+}
+
+.hero .navbar .nav-dropdown a {
+  color: var(--color-text);
+}
+
+.hero .navbar .nav-dropdown a:hover,
+.hero .navbar .nav-dropdown a:focus-visible,
+.hero .navbar .dropdown-link.router-link-active {
+  color: var(--color-link);
+}
+
+.hero .navbar .nav-dropdown a:focus-visible {
+  outline-color: var(--color-link);
 }
 
 .navbar .navbar-header a {

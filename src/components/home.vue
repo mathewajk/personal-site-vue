@@ -72,6 +72,11 @@ p + p {
     list-style: none;
 }
 
+.about-description li::before {
+    content: "//";
+    margin-right: 0.5em;
+}
+
 .about-description ul {
     padding-left: 0;
     margin: 0.75rem 0 0;
@@ -93,61 +98,17 @@ p + p {
     position: relative;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    min-height: 100svh;
-    padding-top: var(--home-header-overlap);
-}
-
-.home-about {
-    grid-template-rows: repeat(1, 1fr);
-
-    flex: 1;
-    
-    display: grid;
-    align-items: center;
-    justify-content: center;
 }
 
 .about-description {
-    margin: 2rem;
-    margin-left: calc(40vw + 2rem);
-    max-width: min(38rem, calc(60vw - 4rem));
+    box-sizing: border-box;
+    width: min(800px, 100%);
+    margin: 2.5rem auto 3rem;
+    padding-inline: 1.5rem;
 }
 
 .other-links {
     margin-top: 2em;
-}
-
-@media screen and (max-width: 767px) {
-
-    .home-about {
-        grid-template-columns: auto;
-        flex: 1;
-        min-height: 0;
-    }
-
-    .about-description {
-        margin: 2rem;
-        padding: 0;
-        max-width: none;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .about-description {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: center;
-        text-align: left;
-    }
-
-    .about-description h1 {
-        margin-top: calc(50vh - 75px);
-        margin-bottom: 1rem;
-        text-align: left;
-    }
 }
 
 </style>
